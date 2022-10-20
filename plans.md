@@ -1,6 +1,6 @@
 # PLAN DOCUMENT
 
-## Initial Functions
+## Initial Functionality
 
 
 ## Requirements

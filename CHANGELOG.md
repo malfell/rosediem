@@ -3,4 +3,4 @@
 ## [0.0.0] 2022-10-15
 ### Added
 * CHANGELOG.md
-* README.md (the barebones of it)
+* README.md + inspiration section
