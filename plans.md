@@ -1,5 +1,8 @@
 # PLAN DOCUMENT
 
+## Initial Functions
+
+
 ## Requirements
 ### General Requirements
 [ ] This project cannot be part of a lab or assignment we've already done in class.
