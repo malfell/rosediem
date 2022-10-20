@@ -2,10 +2,30 @@
 
 ## Initial Functionality
 - [ ] Index Page
+- [ ] SQL Database
+- [ ] Registration Form
+- [ ] Login Form
+- [ ] User Profiles
+    - [ ] User Passwords and Authentication
+    - [ ] User Profile Page
+    - [ ] Users can add a profile picture
+    - [ ] Users can write/edit their profile bio?
+- [ ] Admin Profiles
+- [ ] Character Profiles (these will be attached to the user's profile page)
+    - [ ] GET Users can view their character profiles (or other people's character profiles)
+    - [ ] POST Users can create a new character profile
+    - [ ] POST/PUT Users can upload images/references to their character profile
+    - [ ] PUT Users can write/edit their characters' bios
+    - [ ] DELETE Users can delete their character profiles
 - [ ] Rules Page
+* A simple page for the event rules)
 - [ ] Attack Categorization Page
+* This will show the sizes/types of art--like what we'll consider the difference between a bust, halfbody, and fullbody so people can categorize their art correctly) 
 - [ ] Point Calculator Page
+* This page will let people fill out a form with all of their art attack information, and then there will be functions to add up their total points. The end goal (probably much later) is to make a page where user's can submit their attacks directly, and the attack will end up on the recipient's profile page, but we aren't focused on this functionality quite yet. We're focusing on images being sent in a Discord server first, and then we'll get there. 
 - [ ] Random Team Member Page
+* This page will let user's click a button and receive a random team member's profile according to whichever team's button they clicked.
+* Eventually, there could be the option to get a random team member's profile depending on what types of character's the person has?
 
 ## Requirements
 ### General Requirements
@@ -35,7 +55,7 @@
     - [x] Describes the inspiration for the application.
     - [ ] Describes how to use the application.
     - [ ] Lists the technologies used to build the application.
-    - [ ]Addresses any outstanding bugs or unfinished functionality.
+    - [ ] Addresses any outstanding bugs or unfinished functionality.
 
 ### Deliverables
 - [ ] A link to your app, which is deployed somewhere.
