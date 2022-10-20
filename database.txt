@@ -1,0 +1,8 @@
+DATABASE
+
+Users
+
+Characters
+
+Each user can have many characters 
+Each character can have images and bio text

@@ -2,14 +2,22 @@
 
 ## Initial Functionality
 - [ ] Index Page
+    - [ ] Navbar 
 - [ ] SQL Database
+    - [ ] Users
+    - [ ] Characters
 - [ ] Registration Form
+    - [ ] Email, Username, Password, Doublecheck password
+    - [ ] Email verification maybe?
 - [ ] Login Form
+    - [ ] Form: Username (or email?), Password
+    - [ ] Option to stay logged in?
 - [ ] User Profiles
     - [ ] User Passwords and Authentication
     - [ ] User Profile Page
     - [ ] Users can add a profile picture
     - [ ] Users can write/edit their profile bio?
+    - [ ] Log out button
 - [ ] Admin Profiles
 - [ ] Character Profiles (these will be attached to the user's profile page)
     - [ ] GET Users can view their character profiles (or other people's character profiles)
@@ -26,6 +34,14 @@
 - [ ] Random Team Member Page
 * This page will let user's click a button and receive a random team member's profile according to whichever team's button they clicked.
 * Eventually, there could be the option to get a random team member's profile depending on what types of character's the person has?
+
+## Schedule
+### Friday, October 20
+- [x] Decide what to use for backend. Python(with Flask or Django) or Node (with Express) NODE AND EXPRESS
+- [x] Decide what to use for frontend. React?? REACT
+- [ ] Plan out Database
+- [ ] Get basic server up and running (index page)
+
 
 ## Requirements
 ### General Requirements

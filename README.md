@@ -21,4 +21,10 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 
 ## Unfinished Functionality
 
+
 ## API Documentation
+| Method | Path | Purpose
+| GET | / | Home
+
+
+## App Documentation
