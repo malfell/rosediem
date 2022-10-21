@@ -1,0 +1,23 @@
+{
+  "name": "rosediem",
+  "version": "1.0.0",
+  "description": "There is a major art event called Art Fight (https://artfight.net/) that occurs every year and lasts the whole the month of July. Anyone of all art styles and skill can participate. People add their original characters to the website (bio info, reference images) and are split until two teams. A participant can \"attack\" the opposite team by drawing someone else's character, and then they will receive points for it. Whichever team has the most points when the month ends is the winner. Essentially, it is an art gifting game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malfell/rosediem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malfell/rosediem/issues"
+  },
+  "homepage": "https://github.com/malfell/rosediem#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
