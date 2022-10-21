@@ -37,6 +37,6 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 Path | Component | Purpose
 ----- | ---------- | ------------------|
 / | | Home Page
-/register | | Form for regsistering user
+/register | | Form for registering user
 /login | | Form for logging in
 /rules | | Page for rules
