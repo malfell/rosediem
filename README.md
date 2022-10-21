@@ -31,9 +31,12 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
  GET | /user/:userId | User Profile (preferably going to user's username not ID number)
  PUT | /users/:userId | Update user profile (user's can only update their own profile)
  DELETE | /users/:userId | User can delete their profile
+ POST | /users/:userId/character | User can create a character for their profile
+ PUT | /users/:userId/characters/:characterId | User can edit their own character
+ DELETE | /users/:userId/characters/:characterId | User can delete their own character
 
 ## App Documentation
 Path | Component | Purpose
 ----- | ---------- | ------------------|
-/ | | Home
+/ | | Home Page
 /register | | Form for regsistering user
