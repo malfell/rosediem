@@ -26,6 +26,14 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
  Method | Path | Purpose
  ------- | ------ | ---------
  GET | / | Home
-
+ GET | /users | User Index
+ POST | /users | Create new user (just registration??)
+ GET | /user/:userId | User Profile (preferably going to user's username not ID number)
+ PUT | /users/:userId | Update user profile (user's can only update their own profile)
+ DELETE | /users/:userId | User can delete their profile
 
 ## App Documentation
+Path | Component | Purpose
+----- | ---------- | ------------------|
+/ | | Home
+/register | | Form for regsistering user
