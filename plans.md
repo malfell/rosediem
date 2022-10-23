@@ -50,6 +50,7 @@
 - [ ] Make registration form and make profiles appear in index
 - [ ] Routes for editing and deleting profiles
 - [ ] Database set up?
+- [ ] Style 404 page? (center everything and put it in a box)
 
 ## Requirements
 ### General Requirements
