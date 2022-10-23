@@ -20,7 +20,7 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
 // controller routes
-app.use('/users', require('./controllers/users'))
+app.use('/profiles', require('./controllers/profiles'))
 
 // test homepage route
 app.get('/', (req, res) => {

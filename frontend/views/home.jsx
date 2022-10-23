@@ -13,4 +13,5 @@ function home (){
 
 }
 
+// EXPORT
 module.exports = home
