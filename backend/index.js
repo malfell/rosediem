@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-// 404 Stub
+// 404 route
 app.get('*', (req, res) => {
     res.render('error404')
 })

@@ -8,7 +8,7 @@ function index (data) {
     // format data in the profiles array into HTML so page can display it
     let profilesFormatted = data.profiles.map((profile) => {
         return (
-            <div>
+            <div className="col-sm-4">
                 <h2>{profile.username}</h2>
                 <img src={profile.profilePic} alt={profile.username} />
             </div>
@@ -18,7 +18,10 @@ function index (data) {
     <Def>
         <main>
             <h1>Profiles Index</h1>
-            {profilesFormatted}
+            <div className="row">
+                {profilesFormatted}                
+            </div>
+
         </main>
     </Def>  
     )

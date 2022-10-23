@@ -43,9 +43,13 @@
 - [x] Get basic server up and running (index page)
 
 ### Saturday, October 22
-- [ ] Make Navbar and basic home page
-- [ ] Make initial users routes
+- [x] Make Navbar and basic home page
+- [x] Make initial users route
 
+### Sunday, October 23
+- [ ] Make registration form and make profiles appear in index
+- [ ] Routes for editing and deleting profiles
+- [ ] Database set up?
 
 ## Requirements
 ### General Requirements
