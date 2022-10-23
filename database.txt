@@ -6,6 +6,7 @@ Users
 -Password
 -Date of Birth
 -Characters
+-Profile Pic
 
 Characters
 -Images

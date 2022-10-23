@@ -2,8 +2,8 @@
 
 ## [0.0.1] 2022-10-22
 ### Added
-* basic profiles index
-* basic default, error404, and home views
+* basic profiles index for backend
+* basic default, error404, home, profile index views
 
 ### Changed
 * "users" changed to "profiles" because "users" will be used for the password and account stuff

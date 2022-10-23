@@ -7,8 +7,44 @@ function Def (html) {
         <html>
             <head>
                 <title>RoseDiem Art Duels</title>
+                {/* Bootstrap CDN link */}
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"/>
+                <link rel='stylesheet' href='/css/style.css'/>
             </head>
             <body>
+                {/* NAVBAR */}
+                <nav>
+                    {/* NAVBAR LINKS */}
+                    {/* HOME */}
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    {/* RULES */}
+                    <li>
+                        <a href='/rules'>Rules</a>
+                    </li>
+                    {/* Attack Categorization */}
+                    <li>
+                        <a href='/attack-categorization'>Attack Categorization</a>
+                    </li>
+                    {/* Point Calculator */}
+                    <li>
+                        <a href='/calculator'>Point Calculator</a>
+                    </li>                    
+                    {/* PROFILES INDEX */}
+                    <li>
+                        <a href='/profiles'>Profiles</a>
+                    </li>
+                    {/* Register */}
+                    <li>
+                        <a href='/register'>Register</a>
+                    </li>
+                    {/* Login */}
+                    <li>
+                        <a href='/login'>Login</a>
+                    </li>
+                </nav>
+
                 {html.children}
             </body>
         </html>

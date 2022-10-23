@@ -4,11 +4,21 @@ const React = require('react')
 // Needs a second period to get out of that folder!!
 const Def = require('../default')
 
-function index (){
+function index (data) {
+    // format data in the profiles array into HTML so page can display it
+    let profilesFormatted = data.profiles.map((profile) => {
+        return (
+            <div>
+                <h2>{profile.username}</h2>
+                <img src={profile.profilePic} alt={profile.username} />
+            </div>
+        )
+    })
     return (
     <Def>
         <main>
             <h1>Profiles Index</h1>
+            {profilesFormatted}
         </main>
     </Def>  
     )
