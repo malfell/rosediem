@@ -50,7 +50,7 @@
 ## Requirements
 ### General Requirements
 - [x] This project cannot be part of a lab or assignment we've already done in class.
-- [ ] This project is group by default (no more than 4 people per group), but can be done individually if approved by instructor.
+- [x] This project is group by default (no more than 4 people per group), but can be done individually if approved by instructor.
 - [ ] This project should feature user authentication (i.e., secure logins and passwords).
 - [ ] Effort must be spent on styling, appearance, and user experience.
 - [ ] This app must be tracked in GitHub, with a minimum of 25 commits.

@@ -4,6 +4,7 @@
 ### Added
 * basic profiles index for backend
 * basic default, error404, home, profile index views
+* barebones navbar
 
 ### Changed
 * "users" changed to "profiles" because "users" will be used for the password and account stuff

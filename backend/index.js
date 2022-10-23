@@ -3,9 +3,10 @@
 require('dotenv').config()
 // require express
 const express = require('express');
-
 // initialize the app after requiring express
 const app = express()
+
+// EXPRESS SETTINGS
 
 // This changes the views directory path. 
 // First arg is the "views" folder name. 
@@ -18,6 +19,9 @@ app.set('views', '../frontend/views');
 // necessary for the jsx pages
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+
+app.set('public', '../frontend')
+app.use(express.static('../frontend/public'))
 
 // controller routes
 app.use('/profiles', require('./controllers/profiles'))
