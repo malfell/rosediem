@@ -39,8 +39,12 @@
 ### Friday, October 20
 - [x] Decide what to use for backend. Python(with Flask or Django) or Node (with Express) NODE AND EXPRESS
 - [x] Decide what to use for frontend. React?? REACT
-- [ ] Plan out Database
-- [ ] Get basic server up and running (index page)
+- [x] Plan out Database
+- [x] Get basic server up and running (index page)
+
+### Saturday, October 22
+- [ ] Make Navbar and basic home page
+- [ ] Make initial users routes
 
 
 ## Requirements

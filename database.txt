@@ -1,6 +1,10 @@
 DATABASE
 
 Users
+-Username
+-Email Address
+-Password
+-Date of Birth
 -Characters
 
 Characters

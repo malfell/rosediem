@@ -8,6 +8,9 @@ const express = require('express');
 // initialize the app after requiring express
 const app = express()
 
+// controller routes
+app.use('/users', require('./controllers/users'))
+
 // test homepage route
 app.get('/', (req, res) => {
     res.send('Rosediem Art Duels')
