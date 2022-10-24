@@ -6,6 +6,7 @@
 
 ### Changed 
 * Converted CSS to SCSS
+* Styled the error page more
 
 ## [0.0.1] 2022-10-22
 ### Added
