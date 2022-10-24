@@ -6,8 +6,11 @@ function error404(){
     return (
         <Def>
             <main>
-                <h1>404: PAGE NOT FOUND</h1>
-                <p>get lost fool</p>
+                <div class="box404">
+                    <h1>404 Error</h1>
+                    <p id="text404">We're sorry. If this page exists, it ran away. :( </p>
+                </div>
+                
             </main>
         </Def>
     )

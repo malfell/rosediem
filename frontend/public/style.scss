@@ -6,3 +6,20 @@ body {
     background-color: $primary-color;
 }
 
+h1 {
+    text-align: center;
+}
+
+.box404 {
+    // border: 2px solid black;
+    border-radius: 15%;
+    text-align: center;
+    margin: 3em 15em; 
+    padding: 2em;
+    color: $yellow-text;
+    background-color: $tertiary-color;
+    #text404 {
+        font-size: larger;
+        
+    }
+}

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.0.2] 2022-10-23
+### Added
+* More SCSS styling
+
+### Changed 
+* Converted CSS to SCSS
+
 ## [0.0.1] 2022-10-22
 ### Added
 * basic profiles index for backend

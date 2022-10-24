@@ -26,4 +26,20 @@ a {
 
 body {
   background-color: #DBCA9E;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box404 {
+  border-radius: 15%;
+  text-align: center;
+  margin: 3em 15em;
+  padding: 2em;
+  color: #FEFC9A;
+  background-color: #93B65F;
+}
+.box404 #text404 {
+  font-size: larger;
 }/*# sourceMappingURL=style.css.map */
