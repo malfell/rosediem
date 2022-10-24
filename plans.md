@@ -47,10 +47,12 @@
 - [x] Make initial users route
 
 ### Sunday, October 23
+- [x] Style 404 page? (center everything and put it in a box)
+
+### Sunday, October 24
 - [ ] Make registration form and make profiles appear in index
 - [ ] Routes for editing and deleting profiles
 - [ ] Database set up?
-- [ ] Style 404 page? (center everything and put it in a box)
 
 ## Requirements
 ### General Requirements
@@ -58,7 +60,7 @@
 - [x] This project is group by default (no more than 4 people per group), but can be done individually if approved by instructor.
 - [ ] This project should feature user authentication (i.e., secure logins and passwords).
 - [ ] Effort must be spent on styling, appearance, and user experience.
-- [ ] This app must be tracked in GitHub, with a minimum of 25 commits.
+- [x] This app must be tracked in GitHub, with a minimum of 25 commits.
 - [x] Ideally, put your empty project up on GitHub on day one of development, 
     - [ ] and aim for multiple commits per day.
 - [ ] This app must be deployed somewhere.

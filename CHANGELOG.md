@@ -1,12 +1,15 @@
 # CHANGELOG
 
+## [0.0.3] 2022-10-24
+### Changed 
+* Styled the error page more
+
 ## [0.0.2] 2022-10-23
 ### Added
 * More SCSS styling
 
 ### Changed 
 * Converted CSS to SCSS
-* Styled the error page more
 
 ## [0.0.1] 2022-10-22
 ### Added

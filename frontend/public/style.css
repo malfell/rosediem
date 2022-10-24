@@ -1,5 +1,5 @@
 nav {
-  background-color: #60773F;
+  background-color: #38562E;
   padding: 10px;
 }
 
@@ -22,10 +22,13 @@ a {
 
 #navHome {
   color: #cca3bc;
+  background: #2C4224;
+  border: 1px solid #FEFC9A;
+  padding: 0.2em;
 }
 
 body {
-  background-color: #DBCA9E;
+  background-color: #FAF4CB;
 }
 
 h1 {
@@ -37,8 +40,8 @@ h1 {
   text-align: center;
   margin: 3em 15em;
   padding: 2em;
-  color: #FEFC9A;
-  background-color: #93B65F;
+  color: #2C2645;
+  background-color: #AFCA91;
 }
 .box404 #text404 {
   font-size: larger;
