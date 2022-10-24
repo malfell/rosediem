@@ -1,0 +1,22 @@
+nav {
+    background-color: $secondary-color;
+    padding: 10px;
+  }
+  ul {
+    /* removes bullet points */
+    list-style-type: none;
+    margin: 0;
+  }
+  li {
+    display: inline;
+    margin-right: 25px;
+  }
+  a {
+    color: $yellow-text;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+#navHome {
+    color: #cca3bc;
+  }

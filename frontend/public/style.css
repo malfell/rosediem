@@ -1,7 +1,3 @@
-body {
-  background-color: #DBCA9E;
-}
-
 nav {
   background-color: #60773F;
   padding: 10px;
@@ -26,4 +22,8 @@ a {
 
 #navHome {
   color: #cca3bc;
+}
+
+body {
+  background-color: #DBCA9E;
 }/*# sourceMappingURL=style.css.map */

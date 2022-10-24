@@ -31,6 +31,11 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+// Register new profile
+app.get('/register', (req, res) => {
+    res.render('profiles/register')
+})
+
 // 404 route
 app.get('*', (req, res) => {
     res.render('error404')
