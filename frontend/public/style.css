@@ -45,4 +45,17 @@ h1 {
 }
 .box404 #text404 {
   font-size: larger;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  width: 50%;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

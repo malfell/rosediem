@@ -16,10 +16,7 @@ router.get('/', (req, res) => {
     res.render('profiles/index', { profiles })
 })
 
-// Register new profile
-// router.get('/register', (req, res) => {
-//     res.render('profiles/register')
-// })
+
 
 // export
 module.exports = router

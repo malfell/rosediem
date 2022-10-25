@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 
 // Register new profile
 app.get('/register', (req, res) => {
-    res.render('profiles/register')
+    res.render('register')
 })
 
 // 404 route

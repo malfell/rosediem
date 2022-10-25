@@ -6,7 +6,7 @@ function error404(){
     return (
         <Def>
             <main>
-                <div class="box404">
+                <div className="box404">
                     <h1>404 Error</h1>
                     <p id="text404">We're sorry. If this page exists, it ran away. :( </p>
                 </div>

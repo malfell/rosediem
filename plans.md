@@ -7,8 +7,10 @@
     - [ ] Users
     - [ ] Characters
 - [ ] Registration Form
-    - [ ] Email, Username, Password, Doublecheck password
+    - [ ] Email, Username, Password, Doublecheck password, birthday
     - [ ] Email verification maybe?
+    - [ ] Red asterisks 
+    - [ ] Backend validation
 - [ ] Login Form
     - [ ] Form: Username (or email?), Password
     - [ ] Option to stay logged in?
@@ -50,6 +52,8 @@
 - [x] Style 404 page? (center everything and put it in a box)
 
 ### Sunday, October 24
+
+### Monday, October 25
 - [ ] Make registration form and make profiles appear in index
 - [ ] Routes for editing and deleting profiles
 - [ ] Database set up?
