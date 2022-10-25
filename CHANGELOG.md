@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.0.4] 2022-10-25
+### Added
+* Added log in page
+
+### Changed
+* Styled registration form some more and updated button
+
 ## [0.0.3] 2022-10-24
 ### Changed 
 * Styled the error page more

@@ -22,6 +22,9 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 app.set('public', '../frontend')
 app.use(express.static('../frontend/public'))
+//body parser for decrypting data (like usernames)
+//needs to go ABOVE the routers or you get undefined :(
+app.use(express.urlencoded( {extended: true }));
 
 // controller routes
 app.use('/profiles', require('./controllers/profiles'))
@@ -31,12 +34,14 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+
+
 // Register new profile
 app.get('/register', (req, res) => {
     res.render('register')
 })
 
-// Register new profile
+// Log in
 app.get('/login', (req, res) => {
     res.render('login')
 })

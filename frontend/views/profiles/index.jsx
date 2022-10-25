@@ -19,7 +19,8 @@ function index (data) {
         <main>
             <h1>Profiles Index</h1>
             <div className="row">
-                {profilesFormatted}                
+                {profilesFormatted}
+                               
             </div>
 
         </main>
