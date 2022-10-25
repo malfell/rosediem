@@ -36,6 +36,11 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
+// Register new profile
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
 // 404 route
 app.get('*', (req, res) => {
     res.render('error404')

@@ -92,5 +92,6 @@
 - [ ] A link to your app, which is deployed somewhere.
 - [ ] A link to your GitHub repository (or repositories if there are multiple), so we can see the progress on your app.
 
-
-
+### Later Functionality
+- [ ] Let people choose whether to log in with email or username 
+- [ ] Have a remember me option for log in

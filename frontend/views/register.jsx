@@ -11,7 +11,7 @@ function register(){
                     <container className='registration'>
                         {/* USERNAME */}
                         <div className='form-group'>
-                            <label htmlFor='email'>Username</label>
+                            <label htmlFor='username'>Username</label>
                             <span aria-hidden="true" className="required-field">*</span>
                             <input className='form-control' type='text' placeholder='Username' id='username' name='username' required aria-describedby="required-description" />
                         </div>

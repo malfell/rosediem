@@ -24,13 +24,13 @@ function Def (html) {
                         <a href='/rules'>Rules</a>
                     </li>
                     {/* Attack Categorization */}
-                    <li>
+                    {/* <li>
                         <a href='/attack-categorization'>Attack Categorization</a>
-                    </li>
+                    </li> */}
                     {/* Point Calculator */}
-                    <li>
+                    {/* <li>
                         <a href='/calculator'>Point Calculator</a>
-                    </li>                    
+                    </li>                     */}
                     {/* PROFILES INDEX */}
                     <li>
                         <a href='/profiles'>Profiles</a>
@@ -41,7 +41,7 @@ function Def (html) {
                     </li>
                     {/* Login */}
                     <li>
-                        <a href='/login'>Login</a>
+                        <a href='/login'>Log In</a>
                     </li>
                 </nav>
 
