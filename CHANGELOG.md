@@ -1,13 +1,20 @@
-# CHANGELOG
+# CHANGELOG 
+https://keepachangelog.com/en/1.0.0/
+
+## [0.0.5] 2022-10-26
+### Added
+* Edit and Delete buttons to individual profile views
+* Profiles can be deleted. Profiles can be deleted by ANYONE though, and that is not ideal. That'll be fixed later though. Also need to add a confirmation for deleting your profile. 
 
 ## [0.0.4] 2022-10-25
 ### Added
 * Log in page
 * Randomized messages for the error 404 page--for flavor
 * Basic show page
+* Registration page
 
 ### Changed
-* Styled registration form some more and updated button
+* Styled navbar more and gave links a hover color
 
 ## [0.0.3] 2022-10-24
 ### Changed 

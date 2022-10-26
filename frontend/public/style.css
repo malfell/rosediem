@@ -77,10 +77,6 @@ h1 {
   background: linear-gradient(to bottom left, rgb(183, 211, 152), rgb(219, 245, 188));
 }
 
-.required-field {
-  color: red;
-}
-
 .indexNames {
   color: black;
   font-size: 1em;

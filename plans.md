@@ -86,6 +86,8 @@
 - [ ] A link to your GitHub repository (or repositories if there are multiple), so we can see the progress on your app.
 
 ### Later Functionality
+- [ ] Let people change their emails
+- [ ] Let people change their passwords
 - [ ] Let people choose whether to log in with email or username 
 - [ ] Delete buttons show a confirm delete pop up
 - [ ] Have a remember me option for log in
