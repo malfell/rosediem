@@ -20,6 +20,7 @@
     - [ ] Users can add a profile picture
     - [ ] Users can write/edit their profile bio?
     - [ ] Log out button
+    - [ ] Users must be logged in to view profiles
 - [ ] Admin Profiles
 - [ ] Character Profiles (these will be attached to the user's profile page)
     - [ ] GET Users can view their character profiles (or other people's character profiles)
@@ -46,7 +47,7 @@
 ### Sunday, October 24
 
 ### Monday, October 25
-- [ ] Make registration form and make profiles appear in index
+- [x] Make registration form and make profiles appear in index (for testing purposes)
 - [ ] Routes for editing and deleting profiles
 - [ ] Database set up?
 
@@ -86,10 +87,12 @@
 
 ### Later Functionality
 - [ ] Let people choose whether to log in with email or username 
+- [ ] Delete buttons show a confirm delete pop up
 - [ ] Have a remember me option for log in
 - [ ] Block feature
 - [ ] When registering let person know if username is free or taken upon typing it
 - [ ] Footer
+- [ ] Let people adjust profile/picture thumbnails directly on the website
 
 - [ ] Rules Page
 * A simple page for the event rules

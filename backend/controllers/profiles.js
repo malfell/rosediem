@@ -27,8 +27,25 @@ router.get('/:id', (req, res) => {
     else if (!profiles[id]) {
         res.render('error404')
     }
+    // last "id" is to add the href value for the delete/edit button (accesses array index number)
     else {
-        res.render('profiles/show', { profile: profiles[id]} )
+        res.render('profiles/show', { profile: profiles[id], id} )
+    }
+})
+
+// delete a profile
+router.delete('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!profiles[id]) {
+        res.render('error404')
+    } else {
+        // delete from array
+        profiles.splice(id, 1)
+        res.redirect('/profiles')
+        console.log(`You have deleted ${profiles[id].username}`)
     }
 })
 

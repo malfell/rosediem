@@ -9,6 +9,17 @@ function show (data) {
             <main>
                 <h1>{data.profile.username}</h1>
                 <img src={data.profile.pic} alt={data.profile.username}></img>
+                <p>Profile Info Here</p>
+
+                {/* BUTTONS */}
+                <a href={`/profiles/${data.id}/edit`} className="btn btn-warning">
+                    Edit
+                </a>
+                <form method="POST" action={`/profiles/${data.id}?_method=DELETE`}>
+                    <button type="submit" className="btn btn-danger">
+                        Delete
+                    </button>
+                </form>
             </main>
         </Def>
     )
