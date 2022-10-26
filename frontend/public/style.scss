@@ -3,6 +3,7 @@
 @import 'navbar';
 
 body {
+    // main color of the website
     background-color: $primary-color;
 }
 
@@ -10,8 +11,8 @@ h1 {
     text-align: center;
 }
 
+// 404 error page. Styles the box and text.
 .box404 {
-    // border: 2px solid black;
     border-radius: 15%;
     text-align: center;
     margin: 3em 15em; 
@@ -24,6 +25,7 @@ h1 {
     }
 }
 
+// Styles the registration and login pages.
 .registration {
     display: flex;
     justify-content: center;
@@ -31,25 +33,30 @@ h1 {
     flex-direction: column;
 }
 
+// Styles the forms you fill in for registration/login pages.
 .form-group {
     width: 25%;
     margin-bottom: 0.5em;
     font-weight: bold;
 }
 
+// Submit button on register/log in pages
 .submit-button {
     padding: 0.25em 0.75em;
     background-color: $tertiary-color;
     margin-bottom: 1em;
     font-weight: bold;
+    // changes the button color on mouse hover
     &:hover{
         background: linear-gradient(to bottom left, rgb(183, 211, 152), rgb(219, 245, 188));
     }
 }
 
+// All names on the profile page
 .indexNames {
     color: black;
     font-size: 1em;
+    // changes profile name colors when mouse hovers over them
     &:hover {
         color: rgb(82, 82, 82);
     }

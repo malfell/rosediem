@@ -1,3 +1,4 @@
+// All the Navbar styling
 nav {
     background-color: $secondary-color;
     padding: 10px;
@@ -20,12 +21,14 @@ nav {
     }
   }
 
+// Formatting specifically for RoseDiem Art Duels home link
 #navHome {
     color: #cca3bc;
     background: $secondary-darker;
     border: 1px solid $yellow-text;
     padding: 0.2em;
     margin-left: -25px;
+    // Change color on mouse hover
     &:hover {
       color: #fffff1;
     }
