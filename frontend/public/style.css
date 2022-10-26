@@ -19,12 +19,19 @@ a {
   font-size: 1.5em;
   text-decoration: none;
 }
+a:hover {
+  color: #fffff1;
+}
 
 #navHome {
   color: #cca3bc;
   background: #2C4224;
   border: 1px solid #FEFC9A;
   padding: 0.2em;
+  margin-left: -25px;
+}
+#navHome:hover {
+  color: #fffff1;
 }
 
 body {

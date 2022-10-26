@@ -88,6 +88,7 @@
 - [ ] Let people choose whether to log in with email or username 
 - [ ] Have a remember me option for log in
 - [ ] Block feature
+- [ ] When registering let person know if username is free or taken upon typing it
 - [ ] Footer
 
 - [ ] Rules Page

@@ -15,34 +15,37 @@ function Def (html) {
                 {/* NAVBAR */}
                 <nav>
                     {/* NAVBAR LINKS */}
-                    {/* HOME */}
-                    <li>
-                        <a id="navHome" href='/'>RoseDiem Art Duels</a>
-                    </li>
-                    {/* RULES */}
-                    <li>
-                        <a href='/rules'>Rules</a>
-                    </li>
-                    {/* Attack Categorization */}
-                    {/* <li>
-                        <a href='/attack-categorization'>Attack Categorization</a>
-                    </li> */}
-                    {/* Point Calculator */}
-                    {/* <li>
-                        <a href='/calculator'>Point Calculator</a>
-                    </li>                     */}
-                    {/* PROFILES INDEX */}
-                    <li>
-                        <a href='/profiles'>Profiles</a>
-                    </li>
-                    {/* Register */}
-                    <li>
-                        <a href='/register'>Register</a>
-                    </li>
-                    {/* Login */}
-                    <li>
-                        <a href='/login'>Log In</a>
-                    </li>
+                    <ul>
+                        {/* HOME */}
+                        <li>
+                            <a id="navHome" href='/'>RoseDiem Art Duels</a>
+                        </li>
+                        {/* RULES */}
+                        <li>
+                            <a href='/rules'>Rules</a>
+                        </li>
+                        {/* Attack Categorization */}
+                        {/* <li>
+                            <a href='/attack-categorization'>Attack Categorization</a>
+                        </li> */}
+                        {/* Point Calculator */}
+                        {/* <li>
+                            <a href='/calculator'>Point Calculator</a>
+                        </li>                     */}
+                        {/* PROFILES INDEX */}
+                        <li>
+                            <a href='/profiles'>Profiles</a>
+                        </li>
+                        {/* Register */}
+                        <li>
+                            <a href='/register'>Register</a>
+                        </li>
+                        {/* Login */}
+                        <li>
+                            <a href='/login'>Log In</a>
+                        </li>                        
+                    </ul>
+                    
                 </nav>
 
                 {html.children}
