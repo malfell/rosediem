@@ -8,8 +8,8 @@ function show (data) {
         <Def>
             <main>
                 <h1>{data.profile.username}</h1>
-                <img src={data.profile.pic} alt={data.profile.username}></img>
-                <p>Profile Info Here</p>
+                <img className="thumbnail" src={data.profile.pic} alt={data.profile.username}></img>
+                <p>{data.profile.info}</p>
 
                 {/* BUTTONS */}
                 <a href={`/profiles/${data.id}/edit`} className="btn btn-warning">

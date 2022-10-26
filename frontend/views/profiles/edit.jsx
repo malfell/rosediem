@@ -9,13 +9,15 @@ function edit_profile(data) {
         <Def>
             <main>
                 <h1>Edit Profile</h1>
-                <form method='POST' action={`/profiles/${data.profile.id}?_method=PUT`}>
+                {console.log(data)}
+                {/* THIS ONE needs to be data.id? For some reason? Not data.profile.id? */}
+                <form method='POST' action={`/profiles/${data.id}?_method=PUT`}>
                     <container className='registration'>
                         {/* PROFILE PIC */}
-                        {/* <div className='form-group'>
+                        <div className='form-group'>
                             <label htmlFor='pic'>Profile Picture</label>
-                            <input className='form-control' type='file' defaultValue={data.profile.pic} id='pic' name='pic' />
-                        </div>                         */}
+                            <input className='form-control' type='text' defaultValue={data.profile.pic} id='pic' name='pic' />
+                        </div>                        
                         {/* USERNAME */}
                         <div className='form-group'>
                             <label htmlFor='username'>Username</label>
@@ -23,24 +25,24 @@ function edit_profile(data) {
                             type='text' 
                             defaultValue={data.profile.username} 
                             id='username' 
-                            name='username' 
-                            required aria-describedby="required-description" />
+                            name='username'
+                            required  />
                         </div>
 
                         {/* BIRTHDATE */}
-                        {/* <div className='form-group'>
+                        <div className='form-group'>
                             <label htmlFor='passwordConfirm'>Birthday</label>
                             <input className='form-control' type='date' defaultValue={data.profile.birthday} id='birthday' name='birthday' required aria-describedby="required-description"/>
                             <p style={{color: 'gray', fontWeight: 'normal'}}>Your birthday will not be public.</p>
-                        </div> */}
+                        </div>
                         {/* Info */}
-                        {/* <div className='form-group'>
+                        <div className='form-group'>
                             <label htmlFor='info'>Info</label>
                             <textarea cols='3' rows='3'
                             className='form-control' type='textarea' defaultValue={data.profile.info} id='info' name='info'/>
-                        </div> */}
+                        </div>
                         {/* SUBMIT BUTTON */}
-                        <input type='submit' className='submit-button' value='Save Changes'/>                        
+                        <input className='submit-button' type='submit' value='Save Changes'/>                        
                     </container>
                 </form>
             </main>

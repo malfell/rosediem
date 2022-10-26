@@ -83,4 +83,9 @@ h1 {
 }
 .indexNames:hover {
   color: rgb(82, 82, 82);
+}
+
+.thumbnail {
+  width: 200px;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */

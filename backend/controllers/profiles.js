@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
     res.redirect('/profiles')
 })
 
-// EDIT PROFILE
+// GET EDIT PROFILE PAGE
 router.get('/:id/edit', (req, res) => {
     let id = Number(req.params.id)
     if (isNaN(id)) {
@@ -47,7 +47,7 @@ router.get('/:id', (req, res) => {
     }
 })
 
-// EDIT PROFILE BY ID
+// // EDIT PROFILE BY ID
 router.put('/:id', (req, res) => {
     // res.send('PUT /profiles/:id stub')
     let id = Number(req.params.id)
@@ -78,6 +78,7 @@ router.delete('/:id', (req, res) => {
         console.log(`You have deleted ${profiles[id].username}`)
     }
 })
+
 
 
 
