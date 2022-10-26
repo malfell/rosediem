@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 
 // Register new profile
 app.get('/register', (req, res) => {
-    res.render('register')
+    res.render('profiles/register')
 })
 
 

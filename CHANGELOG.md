@@ -2,7 +2,9 @@
 
 ## [0.0.4] 2022-10-25
 ### Added
-* Added log in page
+* Log in page
+* Randomized messages for the error 404 page--for flavor
+* Basic show page
 
 ### Changed
 * Styled registration form some more and updated button
