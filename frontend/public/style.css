@@ -79,4 +79,12 @@ h1 {
 
 .required-field {
   color: red;
+}
+
+.indexNames {
+  color: black;
+  font-size: 1em;
+}
+.indexNames:hover {
+  color: rgb(82, 82, 82);
 }/*# sourceMappingURL=style.css.map */

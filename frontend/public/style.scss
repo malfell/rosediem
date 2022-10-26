@@ -50,3 +50,11 @@ h1 {
 .required-field {
     color: red;
 }
+
+.indexNames {
+    color: black;
+    font-size: 1em;
+    &:hover {
+        color: rgb(82, 82, 82);
+    }
+  }

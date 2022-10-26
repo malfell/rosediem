@@ -18,5 +18,19 @@ router.post('/', (req, res) => {
     res.redirect('/profiles')
 })
 
+// show individual profile
+router.get('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!profiles[id]) {
+        res.render('error404')
+    }
+    else {
+        res.render('profiles/show', { profile: profiles[id]} )
+    }
+})
+
 // export
 module.exports = router

@@ -3,6 +3,8 @@
 require('dotenv').config()
 // require express
 const express = require('express');
+// require method override so you use PUT/DELETE methods
+const methodOverride = require('method-override');
 // initialize the app after requiring express
 const app = express()
 
@@ -25,6 +27,8 @@ app.use(express.static('../frontend/public'))
 //body parser for decrypting data (like usernames)
 //needs to go ABOVE the routers or you get undefined :(
 app.use(express.urlencoded( {extended: true }));
+// specify method after requiring method override
+app.use(methodOverride('_method'));
 
 // controller routes
 app.use('/profiles', require('./controllers/profiles'))
@@ -41,10 +45,13 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
+
+
 // Log in
 app.get('/login', (req, res) => {
     res.render('login')
 })
+
 
 // 404 route
 app.get('*', (req, res) => {

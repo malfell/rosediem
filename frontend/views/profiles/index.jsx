@@ -6,11 +6,15 @@ const Def = require('../default')
 
 function index (data) {
     // format data in the profiles array into HTML so page can display it
-    let profilesFormatted = data.profiles.map((profile) => {
+    let profilesFormatted = data.profiles.map((profile, index) => {
         return (
             <div className="col-sm-4">
-                <h2>{profile.username}</h2>
-                <img src={profile.profilePic} alt={profile.username} />
+                <h3>
+                    <a className="indexNames" href={`/profiles/${index}`}>
+                        {profile.username}
+                    </a> 
+                </h3>
+                <img src={profile.pic} alt={profile.username} />
             </div>
         )
     })
@@ -18,6 +22,7 @@ function index (data) {
     <Def>
         <main>
             <h1>Profiles Index</h1>
+            <p>Probably temporary, we'll see</p>
             <div className="row">
                 {profilesFormatted}
                                
