@@ -4,6 +4,7 @@ https://keepachangelog.com/en/1.0.0/
 ## [0.0.6] 2022-10-27
 ### Added
 * Mongoose connection
+* Added technologies to README
 
 ### Changed
 * Updated ReadMe API documentation

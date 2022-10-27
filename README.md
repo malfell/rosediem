@@ -14,6 +14,14 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 ## Demo
 
 ## Technologies
+* Express
+* Node.js
+* jsx
+* scss + css
+* Mongo/Mongoose
+### Minor Installations 
+* method-override
+* dotenv
 
 ## Outstanding Bugs
 
@@ -26,7 +34,7 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
  GET | / | Home
  GET | /profiles | Profile Index
  POST | /register | Create new profile 
- GET | /profile/:id | User Profile (preferably going to user's username not ID number)
+ GET | /profiles/:id | User Profile (preferably going to user's username not ID number)
  PUT | /profiles/:id | Update user profile (user's can only update their own profile)
  DELETE | /profiles/:id | User can delete their profile
 |          |                |
