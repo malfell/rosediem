@@ -2,9 +2,14 @@
 @import 'config';
 @import 'navbar';
 
+
 body {
     // main color of the website
     background-color: $primary-color;
+}
+
+main {
+    margin: 1em;
 }
 
 h1 {
@@ -66,3 +71,13 @@ h1 {
     width: 200px;
     height: 200px;
   }
+
+// These are the text links throughout pages
+.pageLinks {
+    color: black;
+    font-size: 1em;
+    &:hover {
+        color: blue;
+    }
+    text-decoration: underline;
+}

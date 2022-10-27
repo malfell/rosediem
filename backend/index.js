@@ -52,6 +52,10 @@ app.get('/login', (req, res) => {
     res.render('login')
 })
 
+app.get('/rules', (req, res) => {
+    res.render('info-pages/rules')
+})
+
 
 // 404 route
 app.get('*', (req, res) => {

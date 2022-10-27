@@ -3,17 +3,6 @@ nav {
   padding: 10px;
 }
 
-ul {
-  /* removes bullet points */
-  list-style-type: none;
-  margin: 0;
-}
-
-li {
-  display: inline;
-  margin-right: 25px;
-}
-
 a {
   color: #FEFC9A;
   font-size: 1.5em;
@@ -21,6 +10,17 @@ a {
 }
 a:hover {
   color: #fffff1;
+}
+
+.navBarLinks {
+  /* removes bullet points */
+  list-style-type: none;
+  margin: 0;
+}
+
+.navList {
+  display: inline;
+  margin-right: 25px;
 }
 
 #navHome {
@@ -36,6 +36,10 @@ a:hover {
 
 body {
   background-color: #FAF4CB;
+}
+
+main {
+  margin: 1em;
 }
 
 h1 {
@@ -88,4 +92,13 @@ h1 {
 .thumbnail {
   width: 200px;
   height: 200px;
+}
+
+.pageLinks {
+  color: black;
+  font-size: 1em;
+  text-decoration: underline;
+}
+.pageLinks:hover {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */

@@ -18,33 +18,33 @@ function Def (html) {
                 {/* NAVBAR */}
                 <nav>
                     {/* NAVBAR LINKS */}
-                    <ul>
+                    <ul className="navBarLinks">
                         {/* HOME */}
-                        <li>
+                        <li className="navList">
                             <a id="navHome" href='/'>RoseDiem Art Duels</a>
                         </li>
                         {/* RULES */}
-                        <li>
+                        <li className="navList">
                             <a href='/rules'>Rules</a>
                         </li>
                         {/* Attack Categorization */}
-                        {/* <li>
+                        {/* <li className="navList">
                             <a href='/attack-categorization'>Attack Categorization</a>
                         </li> */}
                         {/* Point Calculator */}
-                        {/* <li>
+                        {/* <li className="navList">
                             <a href='/calculator'>Point Calculator</a>
                         </li>                     */}
                         {/* PROFILES INDEX */}
-                        <li>
+                        <li className="navList">
                             <a href='/profiles'>Profiles</a>
                         </li>
                         {/* Register */}
-                        <li>
+                        <li className="navList">
                             <a href='/register'>Register</a>
                         </li>
                         {/* Login */}
-                        <li>
+                        <li className="navList">
                             <a href='/login'>Log In</a>
                         </li>                        
                     </ul>

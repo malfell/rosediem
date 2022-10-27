@@ -5,6 +5,8 @@ https://keepachangelog.com/en/1.0.0/
 ### Added
 * Edit and Delete buttons to individual profile views
 * Profiles can be deleted. Profiles can be deleted by ANYONE though, and that is not ideal. That'll be fixed later though. Also need to add a confirmation for deleting your profile. 
+* Edit button is functional
+* Profile pictures are automatically resized to 200 x 200 px
 
 ## [0.0.4] 2022-10-25
 ### Added

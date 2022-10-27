@@ -48,8 +48,9 @@
 
 ### Monday, October 25
 - [x] Make registration form and make profiles appear in index (for testing purposes)
-- [ ] Routes for editing and deleting profiles
+- [x] Routes for editing and deleting profiles
 - [ ] Database set up?
+- [ ] Add/Delete/Edit characters?
 
 ## Requirements
 ### General Requirements
