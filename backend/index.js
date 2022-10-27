@@ -5,8 +5,19 @@ require('dotenv').config()
 const express = require('express');
 // require method override so you use PUT/DELETE methods
 const methodOverride = require('method-override');
+// require mongoose
+const mongoose = require('mongoose')
+
 // initialize the app after requiring express
 const app = express()
+
+// mongoose can be called anywhere after the required mongoose
+// The first argument that connect takes is the Mongo URI. 
+// The second argument contains optional properties that get rid 
+// of deprecation warnings.
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}, 
+    () => { console.log('connected to mongo: ', process.env.MONGO_URI) }
+  )
 
 // EXPRESS SETTINGS
 
@@ -38,11 +49,10 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-
-
 // Register new profile
 app.get('/register', (req, res) => {
     res.render('profiles/register')
+    // res.send('profiles/register')
 })
 
 
