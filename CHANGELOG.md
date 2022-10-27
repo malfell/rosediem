@@ -1,6 +1,13 @@
 # CHANGELOG 
 https://keepachangelog.com/en/1.0.0/
 
+## [0.0.6] 2022-10-27
+### Added
+* Mongoose connection
+
+### Changed
+* Updated ReadMe API documentation
+
 ## [0.0.5] 2022-10-26
 ### Added
 * Edit and Delete buttons to individual profile views
@@ -8,6 +15,10 @@ https://keepachangelog.com/en/1.0.0/
 * Edit button is functional
 * Profile pictures are automatically resized to 200 x 200 px
 * Rules page
+* Stubs for character routes
+
+### Changed
+* Adjusted default formatting so it scales better on mobile
 
 ## [0.0.4] 2022-10-25
 ### Added

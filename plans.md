@@ -50,8 +50,11 @@
 ### Monday, October 25
 - [x] Make registration form and make profiles appear in index (for testing purposes)
 - [x] Routes for editing and deleting profiles
-- [ ] Database set up?
-- [ ] Add/Delete/Edit characters?
+- [x] Database set up?
+
+### Tuesday, October 26
+- [ ] Finish character routes
+- [ ] Make sure character are connected to database
 
 ## Requirements
 ### General Requirements
@@ -109,3 +112,5 @@
 - [ ] Random Team Member Page
 * This page will let user's click a button and receive a random team member's profile according to whichever team's button they clicked.
 * Eventually, there could be the option to get a random team member's profile depending on what types of character's the person has?
+- [ ] Give people ability to favorite characters (private favorites probably)
+- [ ] Let people have shared characters? Since some people share them.

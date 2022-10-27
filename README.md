@@ -24,14 +24,17 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
  Method | Path | Purpose
  ------- | ------ | ---------
  GET | / | Home
- GET | /users | User Index
- POST | /users | Create new user (just registration??)
- GET | /user/:userId | User Profile (preferably going to user's username not ID number)
- PUT | /users/:userId | Update user profile (user's can only update their own profile)
- DELETE | /users/:userId | User can delete their profile
- POST | /users/:userId/character | User can create a character for their profile
- PUT | /users/:userId/characters/:characterId | User can edit their own character
- DELETE | /users/:userId/characters/:characterId | User can delete their own character
+ GET | /profiles | Profile Index
+ POST | /register | Create new profile 
+ GET | /profile/:id | User Profile (preferably going to user's username not ID number)
+ PUT | /profiles/:id | Update user profile (user's can only update their own profile)
+ DELETE | /profiles/:id | User can delete their profile
+|          |                |
+ GET | /profiles/:id/characters | Character Index for specific profile
+ POST | /profiles/:id/characters/new | User can create a character for their profile
+ GET | /profiles/:id/characters/:id | User can view a profile's character page
+ PUT | /profiles/:id/characters/:id | User can edit their own character
+ DELETE | /profiles/:id/characters/:id | User can delete their own character
 
 ## App Documentation
 Path | Component | Purpose
