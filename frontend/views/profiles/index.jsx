@@ -6,11 +6,12 @@ const Def = require('../default')
 
 function index (data) {
     // format data in the profiles array into HTML so page can display it
-    let profilesFormatted = data.profiles.map((profile, index) => {
+    let profilesFormatted = data.profiles.map((profile) => {
         return (
             <div className="col-sm-2">
                 <h3>
-                    <a className="indexNames" href={`/profiles/${index}`}>
+                    {/* change to profile.username to get link by username!! */}
+                    <a className="indexNames" href={`/profiles/${profile.id}`}>
                         {profile.username}
                     </a> 
                 </h3>

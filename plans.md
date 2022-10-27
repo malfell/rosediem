@@ -3,6 +3,7 @@
 ## Initial Functionality
 - [ ] Index Page
     - [ ] Navbar 
+    - [ ] Fix Navbar home button because it gets chopped up on mobile
 - [ ] SQL Database
     - [ ] Users
     - [ ] Characters
@@ -96,6 +97,8 @@
 - [ ] When registering let person know if username is free or taken upon typing it
 - [ ] Footer
 - [ ] Let people adjust profile/picture thumbnails directly on the website
+- [ ] Default profile image
+- [ ] Rich text editor for profile info
 
 - [x] Rules Page
 * A simple page for the event rules

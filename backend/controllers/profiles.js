@@ -1,41 +1,60 @@
 // Dependencies
 const router = require('express').Router()
-const profiles = require('../models/profiles.js')
+// that one is only needed when profiles are an array (delete later)
+// const profiles = require('../models/profiles.js')
+// require the models folder and nickname it db to access the database
+const db = require('../models')
 
 // ROUTES
 // GET INDEX list of profiles
 router.get('/', (req, res) => {
-    // res.render('profiles/index', { profiles })
-    res.send('GET /profiles')
+    // get all items in the collection using Mongoose's find() method on the Profile model
+    db.Profile.find()
+        // then insert the profiles array
+        .then((profiles) => {
+            // and render the index page
+            res.render('profiles/index', { profiles })
+        })
+        // catch any errors
+        .catch(err => {
+            console.log(err)
+            res.render('error404')
+        })
 })
 
 // CREATE new profile
 router.post('/', (req, res) => {
-    // console.log(req.body)
-    // if (!req.body.pic) {
-    //     req.body.pic = 'https://placekitten.com/200/200'
-    // }
-    // profiles.push(req.body)
-    // res.redirect('/profiles')
-    res.send('POST /places')
+    // use Mongoose's create() method and pass the req.body
+    db.Profile.create(req.body)
+        // When profile is created, redirect the user to appropriate page
+        .then( () => {
+            // probably a different page though. Home page? User's profile page?
+            res.redirect('/profiles')
+        })
+        // catch any errors
+        .catch(err => {
+            console.log('err', err)
+            res.render('error404')
+        })
 })
 
 // The NEW PROFILE route is in the index page. It's the register route.
 
 // SHOW individual profile
 router.get('/:id', (req, res) => {
-    // let id = Number(req.params.id)
-    // if (isNaN(id)) {
-    //     res.render('error404')
-    // }
-    // else if (!profiles[id]) {
-    //     res.render('error404')
-    // }
-    // // last "id" is to add the href value for the delete/edit button (accesses array index number)
-    // else {
-    //     res.render('profiles/show', { profile: profiles[id], id} )
-    // }
-    res.send('GET /profiles/:id')
+    // put the profile's id into Mongo's findById() method
+    db.Profile.findById(req.params.id)
+    // does this then() and catch() not need to be indented???
+    // get correct profile and render it
+    .then(profile => {
+        res.render('profiles/show', { profile })
+    })
+    // catch any error
+    .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+    })
+    // res.send('GET /profiles/:id')
 })
 
 // // EDIT PROFILE BY ID
