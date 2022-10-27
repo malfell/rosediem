@@ -97,7 +97,7 @@
 - [ ] Footer
 - [ ] Let people adjust profile/picture thumbnails directly on the website
 
-- [ ] Rules Page
+- [x] Rules Page
 * A simple page for the event rules
 - [ ] Attack Categorization Page
 * This will show the sizes/types of art--like what we'll consider the difference between a bust, halfbody, and fullbody so people can categorize their art correctly) 
