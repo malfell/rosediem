@@ -4,6 +4,29 @@ const Def = require('../default');
 
 // SHOWS AN INDIVIDUAL PROFILE
 function show (data) {
+    // SHOWS EMPTY IF NO CHARACTERS
+    let characters = (
+        <h3 className="inactive">
+            No characters here.
+        </h3>
+    )
+
+    // Logic for showing characters
+    if (data.profile.characters.length) {
+        characters = data.profile.characters.map(c => {
+            return (
+                <div className="border">
+                    <h3>{c.name}</h3>
+                    <img src={c.avatar} alt={c.name}></img>
+                    <h5>Profile</h5>
+                    <p>{c.profile}</p>
+                    <h5>Permissions</h5>
+                    <p>{c.permissions}</p>
+                </div>
+            )
+        })
+    }
+
     return (
         <Def>
             <main>
@@ -20,6 +43,11 @@ function show (data) {
                         Delete
                     </button>
                 </form>
+
+                {/* CHARACTERS */}
+                <h2>Characters</h2>
+                {characters}
+
             </main>
         </Def>
     )

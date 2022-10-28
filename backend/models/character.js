@@ -9,9 +9,6 @@ let characterSchema = new mongoose.Schema({
     avatar: {type: String, default: 'https://placekitten.com/200/200'},
     profile: {type: String},
     permissions: {type: String},
-    // reference id of character
-    // array of characters
-    characters: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Character' }]
 })
 
 // EXPORT

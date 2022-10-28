@@ -19,7 +19,10 @@ const profileSchema = new mongoose.Schema({
     birthday: { type: Date, required: true},
     pic: {type: String, default: 'https://placekitten.com/200/200'},
     info: String,
-    joinDate: { type: Date, default: Date.now }
+    joinDate: { type: Date, default: Date.now },
+    // reference id of character
+    // array of characters
+    characters: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Character' }]
 })
 
 // EXPORT MODEL

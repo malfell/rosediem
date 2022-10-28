@@ -54,7 +54,7 @@
 - [x] Routes for editing and deleting profiles
 - [x] Database set up?
 
-### Tuesday, October 26
+### Wednesday, October 28
 - [ ] Finish character routes
 - [ ] Make sure character are connected to database
 

@@ -59,9 +59,12 @@ router.post('/', (req, res) => {
 router.get('/:id', (req, res) => {
     // put the profile's id into Mongo's findById() method
     db.Profile.findById(req.params.id)
+    // populate the characters onto the person's profile
+    .populate('characters')
     // does this then() and catch() not need to be indented???
     // get correct profile and render it
     .then(profile => {
+        console.log(profile.characters)
         res.render('profiles/show', { profile })
     })
     // catch any error

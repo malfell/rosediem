@@ -17,4 +17,4 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // EXPORT MODELS
 module.exports.Profile = require('./profiles')
-module.exports.Character = require('/character')
+module.exports.Character = require('./character')
