@@ -12,10 +12,10 @@ function show (data) {
                 <p>{data.profile.info}</p>
 
                 {/* BUTTONS */}
-                <a href={`/profiles/${data.id}/edit`} className="btn btn-warning">
+                <a href={`/profiles/${data.profile.id}/edit`} className="btn btn-warning">
                     Edit
                 </a>
-                <form method="POST" action={`/profiles/${data.id}?_method=DELETE`}>
+                <form method="POST" action={`/profiles/${data.profile.id}?_method=DELETE`}>
                     <button type="submit" className="btn btn-danger">
                         Delete
                     </button>

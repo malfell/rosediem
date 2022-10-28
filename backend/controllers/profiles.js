@@ -59,50 +59,40 @@ router.get('/:id', (req, res) => {
 
 // // EDIT PROFILE BY ID
 router.put('/:id', (req, res) => {
-    // let id = Number(req.params.id)
-    // if (isNaN(id)) {
-    //     res.render('error404')
-    // }
-    // else if (!profiles[id]) {
-    //     res.render('error404')
-    // }
-    // else {
-    //     profiles[id] = req.body
-    //     res.redirect(`/profiles/${id}`)
-    // }
-    res.send('PUT /profiles/:id stub')
+    db.Profile.findByIdAndUpdate(req.params.id, req.body)
+    // res.send('PUT /profiles/:id stub')
+    .then(() => {
+        res.redirect(`/profiles/${req.params.id}`)
+      })
+      .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+      })
 })
 
 // DELETE PROFILE
 router.delete('/:id', (req, res) => {
-    // let id = Number(req.params.id)
-    // if (isNaN(id)) {
-    //     res.render('error404')
-    // }
-    // else if (!profiles[id]) {
-    //     res.render('error404')
-    // } else {
-    //     // delete from array
-    //     profiles.splice(id, 1)
-    //     res.redirect('/profiles')
-    //     console.log(`You have deleted ${profiles[id].username}`)
-    // }
-    res.send('DELETE /profiles/:id')
+    db.Profile.findByIdAndDelete(req.params.id)
+    .then(profile => {
+        res.redirect('/profiles')
+    })
+    .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+    })
+    // res.send('DELETE /profiles/:id')
 })
 
 // GET EDIT PROFILE PAGE
 router.get('/:id/edit', (req, res) => {
-    // let id = Number(req.params.id)
-    // if (isNaN(id)) {
-    //     res.render('error404')
-    // }
-    // else if (!profiles[id]) {
-    //     res.render('error404')
-    // }
-    // else {
-    //     res.render('profiles/edit', { profile: profiles[id], id: id })
-    // }
-    res.send('GET edit form')
+    db.Profile.findById(req.params.id)
+    .then(profile => {
+      res.render('profiles/edit', { profile })
+    })
+    .catch(err => {
+      res.render('error404')
+    })
+    // res.send('GET edit form')
 })
 
 // CHARACTER ROUTES

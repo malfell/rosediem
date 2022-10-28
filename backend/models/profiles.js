@@ -6,12 +6,20 @@ const mongoose = require('mongoose')
 // declare new Schema for profiles
 // all fields must be declared with a type
 const profileSchema = new mongoose.Schema({
-    username: { type: String, required: true},
+    username: { 
+        type: String, 
+        required: true, 
+        minlength: [2, 'Username must be longer than 1 character.'],
+        maxlength: [40, 'Username must be shorter than 40 characters.']  },
     email: { type: String, required: true},
-    password: { type: String, required: true},
+    password: { 
+        type: String, 
+        required: true,
+        min: [8, 'Password should be longer than 8 characters.']},
     birthday: { type: Date, required: true},
     pic: {type: String, default: 'https://placekitten.com/200/200'},
     info: String,
+    joinDate: { type: Date, default: Date.now }
 })
 
 // EXPORT MODEL

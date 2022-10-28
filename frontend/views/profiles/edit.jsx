@@ -11,7 +11,7 @@ function edit_profile(data) {
                 <h1>Edit Profile</h1>
                 {console.log(data)}
                 {/* THIS ONE needs to be data.id? For some reason? Not data.profile.id? */}
-                <form method='POST' action={`/profiles/${data.id}?_method=PUT`}>
+                <form method='POST' action={`/profiles/${data.profile.id}?_method=PUT`}>
                     <container className='registration'>
                         {/* PROFILE PIC */}
                         <div className='form-group'>

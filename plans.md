@@ -11,7 +11,7 @@
     - [ ] Email, Username, Password, Doublecheck password, birthday
     - [ ] Email verification maybe?
     - [x] Red asterisks 
-    - [ ] Backend validation
+    - [ ] Backend validation (profiles.js in models)
 - [ ] Login Form
     - [x] Form: Username (or email?), Password
     - [ ] Option to stay logged in?
