@@ -1,6 +1,10 @@
 // This is the file that connects to Mongoose
 // DEPENDENCIES
+// require dotenv in order to use MONGO_URL variable--need to seed into the database
+require('dotenv').config();
 const mongoose = require('mongoose');
+
+
 
 // establish connection
 // useNewUrlParser and useUnifiedTopology are optional, but they'll

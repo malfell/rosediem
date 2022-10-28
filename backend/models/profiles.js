@@ -7,10 +7,11 @@ const mongoose = require('mongoose')
 // all fields must be declared with a type
 const profileSchema = new mongoose.Schema({
     username: { type: String, required: true},
+    email: { type: String, required: true},
     password: { type: String, required: true},
+    birthday: { type: Date, required: true},
     pic: {type: String, default: 'https://placekitten.com/200/200'},
     info: String,
-    birthday: { type: Date, required: true},
 })
 
 // EXPORT MODEL
