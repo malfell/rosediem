@@ -2,11 +2,22 @@
 const React = require('react');
 const Def = require('../default');
 
-function register(){
+// add data parameter to pass in error messages
+function register(data){
+    // ERROR MESSAGE
+    let message = ''
+        if (data.message) {
+            message = (
+                <h4 className='alert-danger'>
+                    {data.message}
+                </h4>
+            )
+        }
     return (
         <Def>
             <main>
                 <h1>Register</h1>
+                {message}
                 <form method="POST" action="/profiles">
                     <container className='registration'>
                         {/* USERNAME */}

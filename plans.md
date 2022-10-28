@@ -9,9 +9,10 @@
     - [ ] Characters
 - [ ] Registration Form
     - [ ] Email, Username, Password, Doublecheck password, birthday
+    - [ ] Birthday is buggy. Change is to three fields for each number? Because it won't save the info as it is.
     - [ ] Email verification maybe?
-    - [x] Red asterisks 
     - [ ] Backend validation (profiles.js in models)
+    - [ ] Style the validation error thing and make it better
 - [ ] Login Form
     - [x] Form: Username (or email?), Password
     - [ ] Option to stay logged in?

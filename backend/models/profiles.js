@@ -15,7 +15,7 @@ const profileSchema = new mongoose.Schema({
     password: { 
         type: String, 
         required: true,
-        min: [8, 'Password should be longer than 8 characters.']},
+        minlength: [8, 'Password should be longer than 8 characters.']},
     birthday: { type: Date, required: true},
     pic: {type: String, default: 'https://placekitten.com/200/200'},
     info: String,

@@ -24,6 +24,7 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 * dotenv
 
 ## Outstanding Bugs
+* Edit form doesn't have working form validation like the register form. This currently allows people to do things like changing their username to 1 letter when 2 is the minlength. 
 
 ## Unfinished Functionality
 

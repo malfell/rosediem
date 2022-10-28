@@ -33,8 +33,23 @@ router.post('/', (req, res) => {
         })
         // catch any errors
         .catch(err => {
-            console.log('err', err)
-            res.render('error404')
+            // if user enters wrong info into the registration form, get
+            // validation error and show an error message
+            if (err && err.name == 'ValidationError'){
+                let message = 'Validation Error: '
+                // multiple error messages--loops through the errors
+                for (var field in err.errors) {
+                    // this gets the validation message from profiles schema
+                    message += `${err.errors[field].message}`
+                }
+                console.log('Validation error message', message)
+                res.render('profiles/register', { message })
+            }
+            // any other errors get 404 page
+            else {
+                console.log('err', err)
+                res.render('error404') 
+            }
         })
 })
 
@@ -64,10 +79,26 @@ router.put('/:id', (req, res) => {
     .then(() => {
         res.redirect(`/profiles/${req.params.id}`)
       })
-      .catch(err => {
-        console.log('err', err)
-        res.render('error404')
-      })
+    // catch any errors
+    .catch(err => {
+        // if user enters wrong info into the edit form, get
+        // validation error and show an error message
+        if (err && err.name == 'ValidationError'){
+            let message = 'Validation Error: '
+            // multiple error messages--loops through the errors
+            for (var field in err.errors) {
+                // this gets the validation message from profiles schema
+                message += `${err.errors[field].message}`
+            }
+            console.log('Validation error message', message)
+            res.render('profiles/edit', { message })
+        }
+        // any other errors get 404 page
+        else {
+            console.log('err', err)
+            res.render('error404') 
+        }
+    })
 })
 
 // DELETE PROFILE

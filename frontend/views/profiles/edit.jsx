@@ -5,6 +5,17 @@ const Def = require('../default');
 // Edit your Profile
 // insert data into function since we must access the data of the current profile
 function edit_profile(data) {
+    // ERROR MESSAGE
+    // starts with empty string
+    let message = ''
+        // if there is an error, then bring up alert
+        if (data.message) {
+            message = (
+                <h4 className='alert-danger'>
+                    {data.message}
+                </h4>
+            )
+        }
     return (
         <Def>
             <main>
