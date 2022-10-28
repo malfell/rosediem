@@ -5,7 +5,9 @@ const Def = require('../default');
 // add data parameter to pass in error messages
 function register(data){
     // ERROR MESSAGE
+    // starts with empty string
     let message = ''
+        // if there is an error, then bring up alert
         if (data.message) {
             message = (
                 <h4 className='alert-danger'>

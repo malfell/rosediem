@@ -5,6 +5,7 @@ https://keepachangelog.com/en/1.0.0/
 ### Added
 * Mongoose connection
 * Added technologies to README
+* Validation error messages to the registration page
 
 ### Changed
 * Updated ReadMe API documentation

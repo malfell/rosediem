@@ -7,10 +7,16 @@ Users
 -Date of Birth
 -Characters
 -Profile Pic
+-Join Date
+-Global Permissions
 
 Characters
+-Name
+-Avatar
 -Images
--Bio text
+-Profile Text
+-Permissions
+
 
 Each user can have many characters 
 Each character can have images and bio text

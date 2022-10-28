@@ -10,6 +10,7 @@
 - [ ] Registration Form
     - [ ] Email, Username, Password, Doublecheck password, birthday
     - [ ] Birthday is buggy. Change is to three fields for each number? Because it won't save the info as it is.
+    - [ ] Make sure the validation errors don't delete all the info the user filled out
     - [ ] Email verification maybe?
     - [ ] Backend validation (profiles.js in models)
     - [ ] Style the validation error thing and make it better

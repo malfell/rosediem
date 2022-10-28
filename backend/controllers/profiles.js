@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
                     message += `${err.errors[field].message}`
                 }
                 console.log('Validation error message', message)
-                res.render('profiles/register', { message })
+                res.render('profiles/register', { message})
             }
             // any other errors get 404 page
             else {
