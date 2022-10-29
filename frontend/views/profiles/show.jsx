@@ -16,14 +16,22 @@ function show (data) {
     if (data.profile.characters.length) {
         characters = data.profile.characters.map(c => {
             return (
-                <div className="border">
-                    <h3>{c.name}</h3>
-                    <img src={c.avatar} alt={c.name}></img>
-                    <h5>Profile</h5>
-                    <p>{c.profile}</p>
+                <container className="characterList">
+                    <div>
+                        <button className="btn btn-info characterButton">{c.name}</button>
+                    </div>
+                    <div>
+                        <img class="characterAvatar" src={c.avatar} alt={c.name}></img>
+                    </div>
+                    <div>
+                        <h5>Profile</h5>
+                        <p>{c.profile}</p>                        
+                    </div>
+                    <div>
                     <h5>Permissions</h5>
                     <p>{c.permissions}</p>
-                </div>
+                    </div>
+                </container>
             )
         })
     }
@@ -47,7 +55,7 @@ function show (data) {
 
                 {/* CHARACTERS */}
                 <h2>Characters</h2>
-                {characters}
+                <div className="formattedCharacters">{characters}</div>
             </main>
         </Def>
     )

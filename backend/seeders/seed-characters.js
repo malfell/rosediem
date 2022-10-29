@@ -19,7 +19,7 @@ async function seed() {
 
     // save the profile now that it has a character
     await profile.save()
-
+    console.log('Characters seeded!')
     // exit the program
     process.exit()
 }

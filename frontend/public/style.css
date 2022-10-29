@@ -27,6 +27,7 @@ a:hover {
   color: #cca3bc;
   background: #2C4224;
   border: 1px solid #FEFC9A;
+  border-radius: 10%;
   padding: 0.2em;
   margin-left: -25px;
 }
@@ -68,6 +69,29 @@ a:hover {
 }
 #navHome:hover {
   color: #fffff1;
+}
+
+.formattedCharacters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.characterList {
+  text-align: center;
+}
+
+.characterButton {
+  margin: 0.5em;
+}
+
+.characterAvatar {
+  width: 200px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5%;
 }
 
 body {
