@@ -64,7 +64,7 @@ router.get('/:id', (req, res) => {
     // does this then() and catch() not need to be indented???
     // get correct profile and render it
     .then(profile => {
-        console.log(profile.characters)
+        // console.log(profile.characters)
         res.render('profiles/show', { profile })
     })
     // catch any error
@@ -140,13 +140,41 @@ router.get('/:id/characters', (req, res) => {
 })
 
 // CREATE CHARACTER
-router.post('/:id/characters', (req, res) => {
-    res.send('GET /profiles/:id/characters')
+router.post('/:id/character', (req, res) => {
+    // res.send('GET /profiles/:id/character')
+    console.log(req.body)
+    // looks up correct profile
+    db.Profile.findById(req.params.id)
+        .then(profile => {
+            // create character
+            db.Character.create(req.body)
+            .then(character => {
+                // save character id to profile's array
+                profile.characters.push(character.id)
+                // save
+                profile.save()
+                // then redirect to profile page
+                .then(() => {
+                    res.redirect(`/profiles/${req.params.id}/`)
+                })
+                // catch any errors
+                .catch(err => {
+                    res.render('error404')
+                    console.log('error1')
+                })
+            })
+        })
+        // catch other errors
+        .catch(err => {
+            res.render('error404')
+            console.log('error2')
+        })
 })
 
 // CREATE CHARACTER PAGE
 router.get('/:id/characters/new', (req, res) => {
-    res.send('')
+    // res.send('GET /profiles/:id/characters/new')
+    res.render('profiles/characters/new')
 })
 
 // SHOW SINGLE CHARACTER PAGE

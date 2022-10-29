@@ -1,11 +1,16 @@
 # CHANGELOG 
 https://keepachangelog.com/en/1.0.0/
 
+## [0.0.7] 2022-10-28
+### Added
+* Characters show can be shown on user's profile page
+
 ## [0.0.6] 2022-10-27
 ### Added
 * Mongoose connection
 * Added technologies to README
 * Validation error messages to the registration page
+* Character schema
 
 ### Changed
 * Updated ReadMe API documentation
