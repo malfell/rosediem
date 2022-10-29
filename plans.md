@@ -24,6 +24,7 @@
     - [ ] Users can write/edit their profile bio?
     - [ ] Log out button
     - [ ] Users must be logged in to view profiles
+    - [ ] Profile navbar?
 - [ ] Admin Profiles
 - [ ] Character Profiles (these will be attached to the user's profile page)
     - [ ] GET Users can view their character profiles (or other people's character profiles)
@@ -56,7 +57,8 @@
 
 ### Wednesday, October 28
 - [ ] Finish character routes
-- [ ] Make sure character are connected to database
+- [x] Make sure character are connected to database
+- [ ] Make top navbar yellow again
 
 ## Requirements
 ### General Requirements

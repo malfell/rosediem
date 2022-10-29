@@ -1,25 +1,24 @@
 // All the Navbar styling
-nav {
-    background-color: $secondary-color;
+.navProfile {
+    background-color: $tertiary-color;
     padding: 10px;
-
   }
-  a {
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none;
-    &:hover {
-      color: #fffff1;
-    }
+a {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  &:hover {
+    color: #fffff1;
   }
+}
 
-.navBarLinks {
+.navbarLinksProfile {
   /* removes bullet points */
   list-style-type: none;  
   margin: 0;
 }
 
-.navList {
+.navListProfile {
   display: inline;
   margin-right: 25px;
 }

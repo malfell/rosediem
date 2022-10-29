@@ -1,6 +1,7 @@
 // DEPENDENCIES
 const React = require('react');
 const Def = require('../default');
+const DefPro = require('./defaultPro')
 
 // SHOWS AN INDIVIDUAL PROFILE
 function show (data) {
@@ -30,7 +31,7 @@ function show (data) {
     return (
         <Def>
             <main>
-                <h1>{data.profile.username}</h1>
+                <a href={`/profiles/${data.profile.id}`}><h1>{data.profile.username}</h1></a>
                 <img className="thumbnail" src={data.profile.pic} alt={data.profile.username}></img>
                 <p>{data.profile.info}</p>
 
@@ -47,7 +48,6 @@ function show (data) {
                 {/* CHARACTERS */}
                 <h2>Characters</h2>
                 {characters}
-
             </main>
         </Def>
     )
