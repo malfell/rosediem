@@ -1,9 +1,13 @@
 # CHANGELOG 
 https://keepachangelog.com/en/1.0.0/
 
+## [0.0.8] 2022-10-29
+### Added
+* Characters can be created from the user's profile page
+
 ## [0.0.7] 2022-10-28
 ### Added
-* Characters show can be shown on user's profile page
+* Characters can be shown on user's profile page
 
 ## [0.0.6] 2022-10-27
 ### Added

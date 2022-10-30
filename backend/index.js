@@ -43,6 +43,7 @@ app.use(methodOverride('_method'));
 
 // controller routes
 app.use('/profiles', require('./controllers/profiles'))
+app.use('/characters', require('./controllers/characters'))
 
 // test homepage route
 app.get('/', (req, res) => {

@@ -1,11 +1,15 @@
 
 // DEPENDENCIES
 // mongoose must be required in all model files
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+// shorthand for schema
+const { Schema } = mongoose;
+// require character.js
+const Character = require('./character.js')
 
 // declare new Schema for profiles
 // all fields must be declared with a type
-const profileSchema = new mongoose.Schema({
+const profileSchema = new Schema({
     username: { 
         type: String, 
         required: true, 
@@ -23,7 +27,18 @@ const profileSchema = new mongoose.Schema({
     // reference id of character
     // array of characters
     characters: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Character' }]
-})
+    // must specify to schema that we want data to show up for virtual
+}, { toJSON: { virtuals: true }})
+
+// profileSchema virtual
+// profileSchema.virtual('characters', {
+//     // model's schema
+//     ref: 'Profile',
+//     // field of parent that matches child's ref field value
+//     localField: '_id',
+//     // ref field on child documents
+//     foreignField: 'profile'
+// })
 
 // EXPORT MODEL
 module.exports = mongoose.model('Profile', profileSchema)

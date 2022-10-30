@@ -10,7 +10,7 @@ async function seed() {
     let character = await db.Character.create({
         name: 'Cassius Waters',
         avatar: 'https://placekitten.com/200/200',
-        profile: 'Here is info about Cassius.',
+        bio: 'Here is info about Cassius.',
         permissions: 'Be good.'
     })
 

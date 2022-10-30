@@ -38,11 +38,11 @@ function newCharacter(data){
                         </div>
                         {/* PROFILE */}
                         <div className='form-group'>
-                            <label htmlFor='profile'>Profile</label>
+                            <label htmlFor='bio'>Bio</label>
                             {/* <textarea cols='3' rows='3'
                             className='form-control' id='profile' name='profile'
                             /> */}
-                            <input className='form-control' type='text' placeholder='profile' id='profile' name='profile'/>
+                            <input className='form-control' type='text' placeholder='bio' id='bio' name='bio'/>
                         </div>
                         {/* PERMISSIONS */}
                         <div className='form-group'>
