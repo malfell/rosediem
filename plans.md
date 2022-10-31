@@ -4,9 +4,9 @@
 - [ ] Index Page
     - [ ] Navbar 
     - [ ] Fix Navbar home button because it gets chopped up on mobile
-- [ ] SQL Database
-    - [ ] Users
-    - [ ] Characters
+- [x] SQL Database
+    - [x] Users
+    - [x] Characters
 - [ ] Registration Form
     - [ ] Email, Username, Password, Doublecheck password, birthday
     - [ ] Birthday is buggy. Change is to three fields for each number? Because it won't save the info as it is.
@@ -21,17 +21,17 @@
     - [ ] User Passwords and Authentication
     - [ ] User Profile Page
     - [ ] Users can add a profile picture
-    - [ ] Users can write/edit their profile bio?
+    - [x] Users can write/edit their profile bio?
     - [ ] Log out button
     - [ ] Users must be logged in to view profiles
     - [ ] Profile navbar?
 - [ ] Admin Profiles
 - [ ] Character Profiles (these will be attached to the user's profile page)
-    - [ ] GET Users can view their character profiles (or other people's character profiles)
-    - [ ] POST Users can create a new character profile
+    - [x] GET Users can view their character profiles (or other people's character profiles)
+    - [x] POST Users can create a new character profile
     - [ ] POST/PUT Users can upload images/references to their character profile
-    - [ ] PUT Users can write/edit their characters' bios
-    - [ ] DELETE Users can delete their character profiles
+    - [x] PUT Users can write/edit their characters' bios
+    - [x] DELETE Users can delete their character profiles
 
 
 ## Schedule
@@ -56,9 +56,15 @@
 - [x] Database set up?
 
 ### Wednesday, October 28
-- [ ] Finish character routes
 - [x] Make sure character are connected to database
+
+
+### Monday, October 31
+- [x] Finish character routes
 - [ ] Make top navbar yellow again
+- [ ] Add images to character show pages
+- [ ] Account auth! Security!
+
 
 ## Requirements
 ### General Requirements
@@ -73,14 +79,14 @@
 - [ ] The app should have a README.md file including what is referenced below in the application requirements.
 
 ### Application Requirements
-- [ ] Your back-end uses Python or Node.
-- [ ] Your back-end uses Flask or Django (Python) or Express (Node).
-- [ ] Your front-end may use React, or another front-end framework (e.g., Vue, Angular), or a template language (EJS, Pug, Handlebars).
-- [ ] Your app must have a database that has at least two tables (SQL) or collections (Mongo).
-- [ ] Your database must support at least one type of database relationship between tables/collections.
+- [x] Your back-end uses Python or Node.
+- [x] Your back-end uses Flask or Django (Python) or Express (Node).
+- [x] Your front-end may use React, or another front-end framework (e.g., Vue, Angular), or a template language (EJS, Pug, Handlebars).
+- [x] Your app must have a database that has at least two tables (SQL) or collections (Mongo).
+- [x] Your database must support at least one type of database relationship between tables/collections.
 * This can be embedded or relational data in Mongo (An embedded collection will qualify as your second collection).
 * This can be a 1:M (one-to-many) or N:M (many-to-many) relationship between SQL tables.
-- [ ] Your app uses an ORM or ODM to interact with your database (e.g., Sequelize, PyMongo, SQLAlchemy, TypeORM, Mongoose).
+- [x] Your app uses an ORM or ODM to interact with your database (e.g., Sequelize, PyMongo, SQLAlchemy, TypeORM, Mongoose).
 - [ ] This app must run in a web browser.
 - [ ] Your website should be responsive to screen size changes.
 * This means that your website should be viewable and usable on a mobile device or tablet via an internet browser. Text shouldn't be super tiny and layouts shouldn't exceed the screen size on smaller screens.

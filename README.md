@@ -19,6 +19,7 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 * jsx
 * scss + css
 * Mongo/Mongoose
+* React
 ### Minor Installations 
 * method-override
 * dotenv
@@ -26,7 +27,6 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 ## Outstanding Bugs
 * Edit form doesn't have working form validation like the register form. This currently allows people to do things like changing their username to 1 letter when 2 is the minlength. 
 * When I put a Submit Character button on a user's profile and make that Submit Character button take the user to a new character form page, it'll run into POST/profiles/undefined when the user tries to submit. If the form is straight on the user's profile page, then they can submit a character fine. Maybe characters need to be fully on their own route??
-* On a character profile page, the name link won't work. Can't refresh the page by clicking the character's name like how you can with a member's profile page. (could probably be solved by rearranging the routes so characters would be on their own route?)
 * Deleting a character redirects to the profile index instead of the user's profile. I know the route is wrong, but I was having trouble figuring out how to make it redirect properly. 
 
 ## Unfinished Functionality
@@ -42,11 +42,11 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
  PUT | /profiles/:id | Update user profile (user's can only update their own profile)
  DELETE | /profiles/:id | User can delete their profile
 |          |                |
- GET | /profiles/:id/characters | Character Index for specific profile
+ GET | /profiles/:id/characters | Character Index for specific profile (unfinished)
  POST | /profiles/:id/characters/new | User can create a character for their profile
- GET | /profiles/:id/characters/:id | User can view a profile's character page
- PUT | /profiles/:id/characters/:id | User can edit their own character
- DELETE | /profiles/:id/characters/:id | User can delete their own character
+ GET | /characters/:id | User can view a profile's character page
+ PUT | /characters/:id | User can edit their own character
+ DELETE | /characters/:id | User can delete their own character
 
 ## App Documentation
 Path | Component | Purpose
