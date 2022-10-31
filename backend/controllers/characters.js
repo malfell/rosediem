@@ -37,17 +37,28 @@ router.get('/new', (req, res) => {
 
 
 // EDIT CHARACTER
-router.put('/character/:id', (req, res) => {
-    res.send('PUT /profiles/:id/characters/:id')
+router.put('/:id', (req, res) => {
+    res.send('PUT /characters/:id')
 })
 
 // DELETE CHARACTER
-router.delete('/character/:id', (req, res) => {
-    res.send('GET characters/:characterId')
+router.delete('/:id', (req, res) => {
+    // res.send('DELETE characters/:id')
+
+    db.Character.findByIdAndDelete(req.params.id)
+    .then(character => {
+        // need to figure out how to redirect to the USER's profile!!
+        res.redirect('/profiles')
+    })
+    .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+    })
+    
 })
 
 // GET EDIT CHARACTER PAGE
-router.get('/character/:id/edit', (req, res) => {
+router.get('/:id/edit', (req, res) => {
     res.send('GET character edit form')
 })
 

@@ -1,6 +1,10 @@
 # CHANGELOG 
 https://keepachangelog.com/en/1.0.0/
 
+## [0.0.9] 2022-10-30
+### Fixed
+* Create character route AND show character routes work together (only one or the other would work before--it was torture)
+
 ## [0.0.8] 2022-10-29
 ### Added
 * Characters can be created from the user's profile page

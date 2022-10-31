@@ -27,6 +27,7 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 * Edit form doesn't have working form validation like the register form. This currently allows people to do things like changing their username to 1 letter when 2 is the minlength. 
 * When I put a Submit Character button on a user's profile and make that Submit Character button take the user to a new character form page, it'll run into POST/profiles/undefined when the user tries to submit. If the form is straight on the user's profile page, then they can submit a character fine. Maybe characters need to be fully on their own route??
 * On a character profile page, the name link won't work. Can't refresh the page by clicking the character's name like how you can with a member's profile page. (could probably be solved by rearranging the routes so characters would be on their own route?)
+* Deleting a character redirects to the profile index instead of the user's profile. I know the route is wrong, but I was having trouble figuring out how to make it redirect properly. 
 
 ## Unfinished Functionality
 
