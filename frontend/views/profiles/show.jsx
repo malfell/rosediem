@@ -18,7 +18,7 @@ function show (data) {
             return (
                 <container className="characterList">
                     <div>
-                        <button className="btn btn-info characterButton">{c.name}</button>
+                        <a href={`/profiles/${data.profile.id}/characters/${c.id}`}><button className="btn btn-info characterButton">{c.name}</button></a>
                     </div>
                     <div>
                         <img className="characterAvatar" src={c.avatar} alt={c.name}></img>
@@ -50,9 +50,9 @@ function show (data) {
                 </a>
                 {/* NEW CHARACTER  */}
                 {/* hiding this button for now because it's having issues */}
-                {/* <a href={`/profiles/${data.profile.id}/characters/new`} className="btn btn-success">
+                <a href={`/profiles/${data.profile.id}/characters/new`} className="btn btn-success">
                     Submit Character
-                </a> */}
+                </a>
                 {/* DELETE */}
                 <form method="POST" action={`/profiles/${data.profile.id}?_method=DELETE`}>
                     <button type="submit" className="btn btn-danger">

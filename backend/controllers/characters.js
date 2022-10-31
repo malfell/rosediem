@@ -12,15 +12,15 @@ const Profile = require('../models/profiles.js')
 // SHOW SINGLE CHARACTER PAGE
 router.get('/:id', (req, res) => {
     // res.send('GET characters/:id')
-    Character.findById(req.params.id)
-    .then(foundCharacter => {
-        res.render('characters/show', {
-            character: foundCharacter
-        })
-    })
-    .catch(err => {
-        res.render('error404')
-    })
+    // Character.findById(req.params.id)
+    // .then(foundCharacter => {
+    //     res.render('characters/show', {
+    //         character: foundCharacter
+    //     })
+    // })
+    // .catch(err => {
+    //     res.render('error404')
+    // })
 })
 
 // TEST CREATE

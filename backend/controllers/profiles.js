@@ -174,13 +174,23 @@ router.post('/:id/character', (req, res) => {
 // CREATE CHARACTER PAGE
 router.get('/:id/characters/new', (req, res) => {
     // res.send('GET /profiles/:id/characters/new')
-    res.render('profiles/characters/new')
+    res.render('characters/new')
 })
 
 // SHOW SINGLE CHARACTER PAGE
 router.get('/:id/characters/:id', (req, res) => {
     // res.send('GET /profile/:id/characters/:id')
-    res.render('characters/show')
+    // res.render('characters/show')
+    db.Character.findById(req.params.id)
+        .then(foundCharacter => {
+            res.render('characters/show', {
+                character: foundCharacter
+            })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+
 })
 
 // EDIT CHARACTER

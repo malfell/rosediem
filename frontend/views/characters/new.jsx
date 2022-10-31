@@ -4,7 +4,7 @@
 
 // DEPENDENCIES
 const React = require('react');
-const Def = require('../../default');
+const Def = require('../default');
 
 // add data parameter to pass in error messages
 function newCharacter(data){

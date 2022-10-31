@@ -29,11 +29,6 @@ function show (data) {
                 <a href={`/characters/${data.character.id}/edit`} className="btn btn-warning">
                     Edit
                 </a>
-                {/* NEW CHARACTER  */}
-                {/* hiding this button for now because it's having issues */}
-                {/* <a href={`/profiles/${data.profile.id}/characters/new`} className="btn btn-success">
-                    Submit Character
-                </a> */}
                 {/* DELETE */}
                 <form method="POST" action={`/characters/${data.character.id}?_method=DELETE`}>
                     <button type="submit" className="btn btn-danger">
