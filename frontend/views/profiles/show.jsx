@@ -23,14 +23,6 @@ function show (data) {
                     <div>
                         <img className="characterAvatar" src={c.avatar} alt={c.name}></img>
                     </div>
-                    <div>
-                        <h5>Profile</h5>
-                        <p>{c.profile}</p>                        
-                    </div>
-                    <div>
-                    <h5>Permissions</h5>
-                    <p>{c.permissions}</p>
-                    </div>
                 </container>
             )
         })
