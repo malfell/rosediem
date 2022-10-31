@@ -18,7 +18,7 @@ function show (data) {
             return (
                 <container className="characterList">
                     <div>
-                        <a href={`/profiles/${data.profile.id}/characters/${c.id}`}><button className="btn btn-info characterButton">{c.name}</button></a>
+                        <a href={`/characters/${c.id}`}><button className="btn btn-info characterButton">{c.name}</button></a>
                     </div>
                     <div>
                         <img className="characterAvatar" src={c.avatar} alt={c.name}></img>

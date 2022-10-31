@@ -9,18 +9,20 @@ const Profile = require('../models/profiles.js')
 
 
 
+
+
 // SHOW SINGLE CHARACTER PAGE
 router.get('/:id', (req, res) => {
     // res.send('GET characters/:id')
-    // Character.findById(req.params.id)
-    // .then(foundCharacter => {
-    //     res.render('characters/show', {
-    //         character: foundCharacter
-    //     })
-    // })
-    // .catch(err => {
-    //     res.render('error404')
-    // })
+    Character.findById(req.params.id)
+    .then(foundCharacter => {
+        res.render('characters/show', {
+            character: foundCharacter
+        })
+    })
+    .catch(err => {
+        res.render('error404')
+    })
 })
 
 // TEST CREATE
@@ -36,9 +38,19 @@ router.get('/new', (req, res) => {
 })
 
 
-// EDIT CHARACTER
+// EDIT CHARACTER BY ID
 router.put('/:id', (req, res) => {
-    res.send('PUT /characters/:id')
+    // res.send('PUT /characters/:id')
+    console.log(req.body)
+    db.Character.findByIdAndUpdate(req.params.id, req.body)
+    .then(() => {
+        res.redirect(`/characters/${req.params.id}`)
+      })
+    // catch any errors
+    .catch(err => {
+        res.render('error404')
+    })
+    
 })
 
 // DELETE CHARACTER
@@ -59,7 +71,14 @@ router.delete('/:id', (req, res) => {
 
 // GET EDIT CHARACTER PAGE
 router.get('/:id/edit', (req, res) => {
-    res.send('GET character edit form')
+    // res.send('GET character edit form')
+    db.Character.findById(req.params.id)
+    .then(character => {
+      res.render('characters/edit', { character })
+    })
+    .catch(err => {
+      res.render('error404')
+    })
 })
 
 // EXPORT

@@ -24,17 +24,17 @@ function editCharacter(data){
             <main>
                 <h1>Edit Character</h1>
                 {message}
-                <form method="POST" action={`/profiles/${data.id}/character`}>
+                <form method="POST" action={`/characters/${data.character.id}?_method=PUT`}>
                     <container className='registration'>
                         {/* CHARACTER NAME */}
                         <div className='form-group'>
                             <label htmlFor='name'>Character Name </label>
-                            <input className='form-control' type='text' placeholder='Character Name' id='name' name='name' required aria-describedby="required-description" />
+                            <input className='form-control' type='text' defaultValue={data.character.name} id='name' name='name' required aria-describedby="required-description" />
                         </div>
                         {/* AVATAR */}
                         <div className='form-group'>
                             <label htmlFor='avatar'>Avatar</label>
-                            <input className='form-control' type='text' placeholder='Avatar Link' id='avatar' name='avatar'/>
+                            <input className='form-control' type='text' defaultValue={data.character.avatar} id='avatar' name='avatar'/>
                         </div>
                         {/* PROFILE */}
                         <div className='form-group'>
@@ -42,7 +42,7 @@ function editCharacter(data){
                             {/* <textarea cols='3' rows='3'
                             className='form-control' id='profile' name='profile'
                             /> */}
-                            <input className='form-control' type='text' placeholder='bio' id='bio' name='bio'/>
+                            <input className='form-control' type='text' defaultValue={data.character.bio} id='bio' name='bio'/>
                         </div>
                         {/* PERMISSIONS */}
                         <div className='form-group'>
@@ -50,10 +50,10 @@ function editCharacter(data){
                             {/* <textarea cols='3' rows='3'
                             className='form-control' id='permissions' name='permissions'
                             /> */}
-                            <input className='form-control' type='text' placeholder='permissions' id='permissions' name='permissions'/>
+                            <input className='form-control' type='text' defaultValue={data.character.permissions} id='permissions' name='permissions'/>
                         </div>
                         {/* SUBMIT BUTTON */}
-                        <input type='submit' className='submit-button' value='Submit Character'/>                        
+                        <input type='submit' className='submit-button' value='Save Changes'/>                        
                     </container>
                     
                 </form>

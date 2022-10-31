@@ -178,35 +178,35 @@ router.get('/:id/characters/new', (req, res) => {
 })
 
 // SHOW SINGLE CHARACTER PAGE
-router.get('/:id/characters/:id', (req, res) => {
-    // res.send('GET /profile/:id/characters/:id')
-    // res.render('characters/show')
-    db.Character.findById(req.params.id)
-        .then(foundCharacter => {
-            res.render('characters/show', {
-                character: foundCharacter
-            })
-        })
-        .catch(err => {
-            res.render('error404')
-        })
+// router.get('/:id/characters/:id', (req, res) => {
+//     // res.send('GET /profile/:id/characters/:id')
+//     // res.render('characters/show')
+//     db.Character.findById(req.params.id)
+//         .then(foundCharacter => {
+//             res.render('characters/show', {
+//                 character: foundCharacter
+//             })
+//         })
+//         .catch(err => {
+//             res.render('error404')
+//         })
 
-})
+// })
 
-// EDIT CHARACTER
-router.put('/:id/characters/:id', (req, res) => {
-    res.send('PUT /profiles/:id/characters/:id')
-})
+// // EDIT CHARACTER
+// router.put('/:id/characters/:id', (req, res) => {
+//     res.send('PUT /profiles/:id/characters/:id')
+// })
 
-// DELETE CHARACTER
-router.delete('/:id/characters/:characterId', (req, res) => {
-    res.send('GET /profiles/:id/characters/:characterId')
-})
+// // DELETE CHARACTER
+// router.delete('/:id/characters/:characterId', (req, res) => {
+//     res.send('GET /profiles/:id/characters/:characterId')
+// })
 
-// GET EDIT CHARACTER PAGE
-router.get('/:id/characters/:id/edit', (req, res) => {
-    res.send('GET character edit form')
-})
+// // GET EDIT CHARACTER PAGE
+// router.get('/:id/characters/:id/edit', (req, res) => {
+//     res.send('GET character edit form')
+// })
 
 // EXPORT
 module.exports = router

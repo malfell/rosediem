@@ -1,6 +1,10 @@
 # CHANGELOG 
 https://keepachangelog.com/en/1.0.0/
 
+## [0.0.10] 2022-10-31
+### Added
+* Delete button. Characters can be deleted from a user's profile. Unfortunately, it does not redirect the user to their profile. Also, there's no security and delete confirmation yet. 
+
 ## [0.0.9] 2022-10-30
 ### Fixed
 * Create character route AND show character routes work together (only one or the other would work before--it was torture)
