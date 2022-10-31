@@ -24,7 +24,7 @@ function newCharacter(data){
             <main>
                 <h1>Submit New Character</h1>
                 {message}
-                <form method="POST" action={`/profiles/${data.id}/character`}>
+                <form action={`/profiles/${data.id}/character`} method="POST">
                     <container className='registration'>
                         {/* CHARACTER NAME */}
                         <div className='form-group'>

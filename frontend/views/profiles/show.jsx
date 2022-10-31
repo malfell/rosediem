@@ -18,7 +18,7 @@ function show (data) {
             return (
                 <container className="characterList">
                     <div>
-                        <a href={`/characters/${c.id}`} className="btn btn-info characterButton">{c.name}</a>
+                        <button className="btn btn-info characterButton">{c.name}</button>
                     </div>
                     <div>
                         <img className="characterAvatar" src={c.avatar} alt={c.name}></img>
@@ -80,11 +80,11 @@ function show (data) {
                         </div>
                         {/* PROFILE */}
                         <div className='form-group'>
-                            <label htmlFor='profile'>Profile</label>
+                            <label htmlFor='bio'>Bio</label>
                             {/* <textarea cols='3' rows='3'
                             className='form-control' id='profile' name='profile'
                             /> */}
-                            <input className='form-control' type='text' placeholder='profile' id='profile' name='profile'/>
+                            <input className='form-control' type='text' placeholder='bio' id='bio' name='bio'/>
                         </div>
                         {/* PERMISSIONS */}
                         <div className='form-group'>

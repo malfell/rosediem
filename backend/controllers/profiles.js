@@ -66,7 +66,6 @@ router.get('/:id', (req, res) => {
     .then(profile => {
         // console.log(profile.characters)
         res.render('profiles/show', { profile })
-        console.log(profile.characters)
     })
     // catch any error
     .catch(err => {
@@ -179,10 +178,10 @@ router.get('/:id/characters/new', (req, res) => {
 })
 
 // SHOW SINGLE CHARACTER PAGE
-// router.get('/:id/characters/:id', (req, res) => {
-//     // res.send('GET /profile/:id/characters/:id')
-//     res.render('profiles/characters/show')
-// })
+router.get('/:id/characters/:id', (req, res) => {
+    // res.send('GET /profile/:id/characters/:id')
+    res.render('characters/show')
+})
 
 // EDIT CHARACTER
 router.put('/:id/characters/:id', (req, res) => {

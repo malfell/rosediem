@@ -28,7 +28,7 @@ const profileSchema = new Schema({
     // array of characters
     characters: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Character' }]
     // must specify to schema that we want data to show up for virtual
-}, { toJSON: { virtuals: true }})
+})
 
 // profileSchema virtual
 // profileSchema.virtual('characters', {
