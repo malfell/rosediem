@@ -15,6 +15,7 @@ Currently the application only allows a user to create a profile and submit/edit
 User can Register to create a profile. Once registered, they can go to their profile and submit characters. Characters can be edited/deleted too. 
 
 ## Demo
+To be added...
 
 ## Technologies
 * Express
@@ -33,9 +34,30 @@ User can Register to create a profile. Once registered, they can go to their pro
 * Deleting a character redirects to the profile index instead of the user's profile. I know the route is wrong, but I was having trouble figuring out how to make it redirect properly. 
 
 ## Unfinished Functionality
-* Edit form validation
-* Account security and password authentication 
-* Log in 
+- [ ] Edit form validation
+- [ ] Account security and password authentication 
+- [ ] Log in 
+- [ ] Let people change their emails
+- [ ] Let people change their passwords
+- [ ] Let people choose whether to log in with email or username 
+- [ ] Delete buttons show a confirm delete pop up
+- [ ] Have a remember me option for log in
+- [ ] Let users add images to their character pages
+- [ ] Block feature
+- [ ] When registering let person know if username is free or taken upon typing it
+- [ ] Footer
+- [ ] Let people adjust profile/picture thumbnails directly on the website
+- [ ] Default profile image
+- [ ] Rich text editor for profile info
+- [ ] Attack Categorization Page
+* This will show the sizes/types of art--like what we'll consider the difference between a bust, halfbody, and fullbody so people can categorize their art correctly) 
+- [ ] Point Calculator Page
+* This page will let people fill out a form with all of their art attack information, and then there will be functions to add up their total points. The end goal (probably much later) is to make a page where user's can submit their attacks directly, and the attack will end up on the recipient's profile page, but we aren't focused on this functionality quite yet. We're focusing on images being sent in a Discord server first, and then we'll get there. 
+- [ ] Random Team Member Page
+* This page will let user's click a button and receive a random team member's profile according to whichever team's button they clicked.
+* Eventually, there could be the option to get a random team member's profile depending on what types of character's the person has?
+- [ ] Give people ability to favorite characters (private favorites probably)
+- [ ] Let people have shared characters? Since some people share them.
 
 ## API Documentation
  Method | Path | Purpose

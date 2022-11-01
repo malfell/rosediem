@@ -78,7 +78,7 @@
 - [x] Ideally, put your empty project up on GitHub on day one of development, 
     - [/] and aim for multiple commits per day.
 - [ ] This app must be deployed somewhere.
-- [ ] The app should have a README.md file including what is referenced below in the application requirements.
+- [x] The app should have a README.md file including what is referenced below in the application requirements.
 
 ### Application Requirements
 - [x] Your back-end uses Python or Node.
@@ -92,11 +92,11 @@
 - [ ] This app must run in a web browser.
 - [ ] Your website should be responsive to screen size changes.
 * This means that your website should be viewable and usable on a mobile device or tablet via an internet browser. Text shouldn't be super tiny and layouts shouldn't exceed the screen size on smaller screens.
-- [ ] The app should have a README.md file including the following:
+- [x] The app should have a README.md file including the following:
     - [x] Describes the inspiration for the application.
-    - [ ] Describes how to use the application.
+    - [x] Describes how to use the application.
     - [x] Lists the technologies used to build the application.
-    - [ ] Addresses any outstanding bugs or unfinished functionality.
+    - [x] Addresses any outstanding bugs or unfinished functionality.
 
 ### Deliverables
 - [ ] A link to your app, which is deployed somewhere.

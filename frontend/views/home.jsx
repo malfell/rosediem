@@ -6,7 +6,7 @@ function home (){
     return (
     <Def>
         <main>
-            <h1>Rosediem Art Duels</h1>
+            <h1>RoseDiem Art Duels</h1>
         {/* Small Intro Quote */}
         <p style={{textAlign:"center"}}><em>Come, and duel with us to the death in this timeless garden.</em></p>
         
