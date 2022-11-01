@@ -36,9 +36,9 @@ function Def (html) {
                             <a href='/rules'>Rules</a>
                         </li>
                         {/* Attack Categorization */}
-                        {/* <li className="navList">
-                            <a href='/attack-categorization'>Attack Categorization</a>
-                        </li> */}
+                        <li className="navList">
+                            <a href='/attack-categories'>Attack Categories</a>
+                        </li>
                         {/* Point Calculator */}
                         {/* <li className="navList">
                             <a href='/calculator'>Point Calculator</a>

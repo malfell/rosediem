@@ -56,15 +56,19 @@ app.get('/register', (req, res) => {
     // res.send('profiles/register')
 })
 
-
-
 // Log in
 app.get('/login', (req, res) => {
     res.render('login')
 })
 
+// Rules Page
 app.get('/rules', (req, res) => {
     res.render('info-pages/rules')
+})
+
+// Attack Categories Page
+app. get('/attack-categories', (req, res) => {
+    res.render('info-pages/attack-categories')
 })
 
 
