@@ -32,6 +32,8 @@
     - [ ] POST/PUT Users can upload images/references to their character profile
     - [x] PUT Users can write/edit their characters' bios
     - [x] DELETE Users can delete their character profiles
+-[x] Rules Page
+* A simple page for the event rules
 
 
 ## Schedule
@@ -101,6 +103,9 @@
 - [ ] A link to your GitHub repository (or repositories if there are multiple), so we can see the progress on your app.
 
 ### Later Functionality
+- [ ] Edit form validation
+- [ ] Account security and password authentication 
+- [ ] Log in 
 - [ ] Let people change their emails
 - [ ] Let people change their passwords
 - [ ] Let people choose whether to log in with email or username 
@@ -113,9 +118,6 @@
 - [ ] Let people adjust profile/picture thumbnails directly on the website
 - [ ] Default profile image
 - [ ] Rich text editor for profile info
-
-- [x] Rules Page
-* A simple page for the event rules
 - [ ] Attack Categorization Page
 * This will show the sizes/types of art--like what we'll consider the difference between a bust, halfbody, and fullbody so people can categorize their art correctly) 
 - [ ] Point Calculator Page

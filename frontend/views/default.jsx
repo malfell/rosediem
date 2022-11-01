@@ -17,6 +17,10 @@ function Def (html) {
                 {/* href MUST have the slash (/) or else it'll destroy all you love.
                  AKA, any nested folders (like in the profiles folder) won't get the styling */}
                 <link rel='stylesheet' href='/style.css'/>
+
+                {/* ICON NOT WORKING??? */}
+                {/* Added a free rose icon from https://icon-icons.com/icon/rose/38136  */}
+                <link rel="icon" href="./assets/rose-icon.ico" alt="rose icon"/>
             </head>
             <body>
                 {/* NAVBAR */}

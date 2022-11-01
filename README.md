@@ -10,6 +10,9 @@ My friend and I have wanted to try making our own version of this event and incl
 As a twist on the usual Art Fight-esque events, there will be three teams instead of two. People will have 2/3 of possibilities of characters to draw for points. We're tentaively planning to have 3-4 events a year, but if it becomes too time-consuming, we'll have to cut it down. Since the original Art Fight event is in July, we're steering clear of that month and the surrounding months.    
 
 ## How to Use the Application
+Currently the application only allows a user to create a profile and submit/edit/delete their characters. (no account security yet--still working on that)
+
+User can Register to create a profile. Once registered, they can go to their profile and submit characters. Characters can be edited/deleted too. 
 
 ## Demo
 
@@ -30,7 +33,9 @@ As a twist on the usual Art Fight-esque events, there will be three teams instea
 * Deleting a character redirects to the profile index instead of the user's profile. I know the route is wrong, but I was having trouble figuring out how to make it redirect properly. 
 
 ## Unfinished Functionality
-
+* Edit form validation
+* Account security and password authentication 
+* Log in 
 
 ## API Documentation
  Method | Path | Purpose
