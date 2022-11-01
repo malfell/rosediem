@@ -1,7 +1,15 @@
 # CHANGELOG 
 https://keepachangelog.com/en/1.0.0/
 
-## [0.0.10] 2022-10-31
+### [0.1.1] 2022-11-1
+### Added
+* Basics for attack-category page
+* Basics for home page
+
+### Changed
+* README updates
+
+## [0.1.0] 2022-10-31
 ### Added
 * Delete button. Characters can be deleted from a user's profile. Unfortunately, it does not redirect the user to their profile. Also, there's no security and delete confirmation yet. 
 * Edit button (and it WORKS)
