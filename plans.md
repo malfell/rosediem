@@ -74,7 +74,7 @@
 - [ ] Effort must be spent on styling, appearance, and user experience.
 - [x] This app must be tracked in GitHub, with a minimum of 25 commits.
 - [x] Ideally, put your empty project up on GitHub on day one of development, 
-    - [ ] and aim for multiple commits per day.
+    - [/] and aim for multiple commits per day.
 - [ ] This app must be deployed somewhere.
 - [ ] The app should have a README.md file including what is referenced below in the application requirements.
 
@@ -93,7 +93,7 @@
 - [ ] The app should have a README.md file including the following:
     - [x] Describes the inspiration for the application.
     - [ ] Describes how to use the application.
-    - [ ] Lists the technologies used to build the application.
+    - [x] Lists the technologies used to build the application.
     - [ ] Addresses any outstanding bugs or unfinished functionality.
 
 ### Deliverables
@@ -106,6 +106,7 @@
 - [ ] Let people choose whether to log in with email or username 
 - [ ] Delete buttons show a confirm delete pop up
 - [ ] Have a remember me option for log in
+- [ ] Let users add images to their character pages
 - [ ] Block feature
 - [ ] When registering let person know if username is free or taken upon typing it
 - [ ] Footer

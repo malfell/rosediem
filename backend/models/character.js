@@ -11,12 +11,7 @@ let characterSchema = new Schema({
     avatar: {type: String, default: 'https://placekitten.com/200/200'},
     bio: {type: String},
     permissions: {type: String},
-    // profile: {
-    //     // need Schema.Types.ObjectID for a one-to-many-relationship
-    //     type: Schema.Types.ObjectID,
-    //     // refers to profile model
-    //     ref: 'Profile'
-    // }
+    owner: {type: String},
 })
 
 // Create a model to use the schema and
