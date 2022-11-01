@@ -24,7 +24,7 @@ function Def (html) {
             </head>
             <body>
                 {/* NAVBAR */}
-                <nav>
+                <nav className="mainNav">
                     {/* NAVBAR LINKS */}
                     <ul className="navBarLinks">
                         {/* HOME */}
@@ -33,27 +33,27 @@ function Def (html) {
                         </li>
                         {/* RULES */}
                         <li className="navList">
-                            <a href='/rules'>Rules</a>
+                            <a className="navA" href='/rules'>Rules</a>
                         </li>
                         {/* Attack Categorization */}
                         <li className="navList">
-                            <a href='/attack-categories'>Attack Categories</a>
+                            <a className="navA" href='/attack-categories'>Attack Categories</a>
                         </li>
                         {/* Point Calculator */}
                         {/* <li className="navList">
-                            <a href='/calculator'>Point Calculator</a>
+                            <a className="navA" href='/calculator'>Point Calculator</a>
                         </li>                     */}
                         {/* PROFILES INDEX */}
                         <li className="navList">
-                            <a href='/profiles'>Profiles</a>
+                            <a className="navA" href='/profiles'>Profiles</a>
                         </li>
                         {/* Register */}
                         <li className="navList">
-                            <a href='/register'>Register</a>
+                            <a className="navA" href='/register'>Register</a>
                         </li>
                         {/* Login */}
                         <li className="navList">
-                            <a href='/login'>Log In</a>
+                            <a className="navA" href='/login'>Log In</a>
                         </li>                        
                     </ul>
                     

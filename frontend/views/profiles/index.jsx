@@ -8,7 +8,7 @@ function index (data) {
     // format data in the profiles array into HTML so page can display it
     let profilesFormatted = data.profiles.map((profile) => {
         return (
-            <div className="col-sm-2">
+            <div key={profile} className="col-sm-2">
                 <h3>
                     {/* change to profile.username to get link by username!! */}
                     <a className="indexNames" href={`/profiles/${profile.id}`}>

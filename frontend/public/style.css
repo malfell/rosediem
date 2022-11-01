@@ -1,14 +1,14 @@
-nav {
+.mainNav {
   background-color: #38562E;
   padding: 10px;
 }
 
-a {
-  color: black;
+.navA {
+  color: #FEFC9A;
   font-size: 1.5em;
   text-decoration: none;
 }
-a:hover {
+.navA:hover {
   color: #fffff1;
 }
 

@@ -16,7 +16,7 @@ function show (data) {
     if (data.profile.characters.length) {
         characters = data.profile.characters.map(c => {
             return (
-                <container className="characterList">
+                <container key={c} className="characterList">
                     <div>
                         <a href={`/characters/${c.id}`}><button className="btn btn-info characterButton">{c.name}</button></a>
                     </div>
