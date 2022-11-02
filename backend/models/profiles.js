@@ -20,7 +20,7 @@ const profileSchema = new Schema({
         type: String, 
         required: true,
         minlength: [8, 'Password should be longer than 8 characters.']},
-    birthday: { type: Date, required: true},
+    birthday: { type: Date},
     pic: {type: String, default: 'https://placekitten.com/200/200'},
     info: String,
     joinDate: { type: Date, default: Date.now },

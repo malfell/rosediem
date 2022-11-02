@@ -31,6 +31,26 @@ function show (data) {
     return (
         <Def>
             <main>
+                <div className="clearfix container-fluid main-container full-sidebar">
+                    <div className="row row-offcanvas row-offcanvas-left" data-sticky-wrap> 
+                        {/* NAVBAR */}
+                        <nav className="navProfile col-md-4 col-lg-2 sidebar sidebar-offcanvas">
+                            <ul className="side-nav list-unstyled">
+                                <li>
+                                    <a href={`/profiles/${data.profile.id}`}><h1 className="profileName">{data.profile.username}</h1></a>
+                                </li>
+                                <li>
+                                    <img className="thumbnail" src={data.profile.pic} alt={data.profile.username}></img>
+                                </li>
+
+                            </ul>
+                        </nav>    
+                        {/* CONTENT */}
+                    </div>
+                </div>
+
+
+
                 <a href={`/profiles/${data.profile.id}`}><h1>{data.profile.username}</h1></a>
                 <img className="thumbnail" src={data.profile.pic} alt={data.profile.username}></img>
                 <p>{data.profile.info}</p>

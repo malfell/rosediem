@@ -1,13 +1,18 @@
 // All the Navbar styling
 .navProfile {
     background-color: $tertiary-color;
-    padding: 10px;
+    padding: 20px;
   }
 a {
   color: black;
   font-size: 1.5em;
   text-decoration: none;
 
+}
+
+.profileName {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .navbarLinksProfile {
