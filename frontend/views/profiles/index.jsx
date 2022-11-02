@@ -23,7 +23,7 @@ function index (data) {
     <Def>
         <main>
             <h1>Profiles Index</h1>
-            <p>Probably temporary, we'll see</p>
+            <p>This will eventually become a search function for profiles.</p>
             <div className="profileIndex">
                 {profilesFormatted}
                                

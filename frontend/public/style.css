@@ -45,9 +45,6 @@ a {
   font-size: 1.5em;
   text-decoration: none;
 }
-a:hover {
-  color: #fffff1;
-}
 
 .navbarLinksProfile {
   /* removes bullet points */
