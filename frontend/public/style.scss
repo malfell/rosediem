@@ -2,7 +2,7 @@
 @import 'config';
 @import 'navbar';
 @import 'navbarProfile';
-@import 'profileView';
+@import 'profile';
 
 
 body {
@@ -59,20 +59,7 @@ h1 {
     }
 }
 
-// All names on the profile page
-.indexNames {
-    color: black;
-    font-size: 1em;
-    // changes profile name colors when mouse hovers over them
-    &:hover {
-        color: rgb(82, 82, 82);
-    }
-  }
 
-  .thumbnail {
-    width: 200px;
-    height: 200px;
-  }
 
 // These are the text links throughout pages
 .pageLinks {

@@ -5,7 +5,7 @@
 
 .navA {
   color: #FEFC9A;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
 }
 .navA:hover {
@@ -69,6 +69,33 @@ a:hover {
 }
 #navHome:hover {
   color: #fffff1;
+}
+
+.indexNames {
+  color: black;
+  font-size: 1em;
+}
+.indexNames:hover {
+  color: rgb(82, 82, 82);
+}
+
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.profileIndex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.profileList {
+  text-align: center;
 }
 
 .formattedCharacters {
@@ -139,19 +166,6 @@ h1 {
 }
 .submit-button:hover {
   background: linear-gradient(to bottom left, rgb(183, 211, 152), rgb(219, 245, 188));
-}
-
-.indexNames {
-  color: black;
-  font-size: 1em;
-}
-.indexNames:hover {
-  color: rgb(82, 82, 82);
-}
-
-.thumbnail {
-  width: 200px;
-  height: 200px;
 }
 
 .pageLinks {

@@ -1,0 +1,55 @@
+// All names on the profile page
+.indexNames {
+    color: black;
+    font-size: 1em;
+    // changes profile name colors when mouse hovers over them
+    &:hover {
+        color: rgb(82, 82, 82);
+    }
+  }
+
+  .thumbnail {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+.profileIndex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.profileList {
+    text-align: center;
+}
+
+
+// This formats ALL the character profile icons together.
+.formattedCharacters {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 1em;
+}
+
+// This formats each individual character profile icon 
+.characterList {
+    text-align: center;
+}
+
+.characterButton {
+    margin: 0.5em;
+
+}
+
+.characterAvatar {
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5%;
+}

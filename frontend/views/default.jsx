@@ -20,42 +20,45 @@ function Def (html) {
 
                 {/* ICON NOT WORKING??? */}
                 {/* Added a free rose icon from https://icon-icons.com/icon/rose/38136  */}
-                <link rel="icon" href="./assets/rose-icon.ico" alt="rose icon"/>
+                <link rel="icon" href="./assets/rose-icon-2.png" alt="rose icon"/>
             </head>
             <body>
                 {/* NAVBAR */}
-                <nav className="mainNav">
-                    {/* NAVBAR LINKS */}
-                    <ul className="navBarLinks">
-                        {/* HOME */}
-                        <li className="navList">
-                            <a id="navHome" href='/'>RoseDiem Art Duels</a>
-                        </li>
-                        {/* RULES */}
-                        <li className="navList">
-                            <a className="navA" href='/rules'>Rules</a>
-                        </li>
-                        {/* Attack Categorization */}
-                        <li className="navList">
-                            <a className="navA" href='/attack-categories'>Attack Categories</a>
-                        </li>
-                        {/* Point Calculator */}
-                        {/* <li className="navList">
-                            <a className="navA" href='/calculator'>Point Calculator</a>
-                        </li>                     */}
-                        {/* PROFILES INDEX */}
-                        <li className="navList">
-                            <a className="navA" href='/profiles'>Profiles</a>
-                        </li>
-                        {/* Register */}
-                        <li className="navList">
-                            <a className="navA" href='/register'>Register</a>
-                        </li>
-                        {/* Login */}
-                        <li className="navList">
-                            <a className="navA" href='/login'>Log In</a>
-                        </li>                        
-                    </ul>
+                <nav className="navbar mainNav">
+                    <div className="container-fluid">
+                        {/* NAVBAR LINKS */}
+                        <ul className="navBarLinks">
+                            {/* HOME */}
+                            <li className="navList">
+                                <a id="navHome" href='/'>RoseDiem Art Duels</a>
+                            </li>
+                            {/* RULES */}
+                            <li className="navList">
+                                <a className="navA" href='/rules'>Rules</a>
+                            </li>
+                            {/* Attack Categorization */}
+                            <li className="navList">
+                                <a className="navA" href='/attack-categories'><i className="fa-regular fa-user"></i>Attack Categories</a>
+                            </li>
+                            {/* Point Calculator */}
+                            {/* <li className="navList">
+                                <a className="navA" href='/calculator'>Point Calculator</a>
+                            </li>                     */}
+                            {/* PROFILES INDEX */}
+                            <li className="navList">
+                                <a className="navA" href='/profiles'>Profiles</a>
+                            </li>
+                            {/* Register */}
+                            <li className="navList">
+                                <a className="navA" href='/register'>Register</a>
+                            </li>
+                            {/* Login */}
+                            <li className="navList">
+                                <a className="navA" href='/login'>Log In</a>
+                            </li>                        
+                        </ul>
+                    </div>
+                    
                     
                 </nav>
 
