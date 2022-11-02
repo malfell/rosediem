@@ -34,7 +34,7 @@ function show (data) {
                 <div className="clearfix container-fluid main-container full-sidebar">
                     <div className="row row-offcanvas row-offcanvas-left" data-sticky-wrap> 
                         {/* NAVBAR */}
-                        <nav className="navProfile col-md-4 col-lg-2 sidebar sidebar-offcanvas">
+                        {/* <nav className="navProfile col-md-4 col-lg-2 sidebar sidebar-offcanvas">
                             <ul className="side-nav list-unstyled">
                                 <li>
                                     <a href={`/profiles/${data.profile.id}`}><h1 className="profileName">{data.profile.username}</h1></a>
@@ -44,7 +44,7 @@ function show (data) {
                                 </li>
 
                             </ul>
-                        </nav>    
+                        </nav>     */}
                         {/* CONTENT */}
                     </div>
                 </div>
@@ -62,9 +62,9 @@ function show (data) {
                 </a>
                 {/* NEW CHARACTER  */}
                 {/* hiding this button for now because it's having issues */}
-                <a href={`/profiles/${data.profile.id}/characters/new`} className="btn btn-success">
+                {/* <a href={`/profiles/${data.profile.id}/characters/new`} className="btn btn-success">
                     Submit Character
-                </a>
+                </a> */}
                 {/* DELETE */}
                 <form method="POST" action={`/profiles/${data.profile.id}?_method=DELETE`}>
                     <button type="submit" className="btn btn-danger">
